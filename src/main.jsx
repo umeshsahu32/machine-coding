@@ -15,6 +15,7 @@ import {
   MultiStepForm,
   CountDownTimer,
   NotFound,
+  Accordion,
 } from "./Routes/routes.js";
 
 const router = createBrowserRouter([
@@ -82,6 +83,14 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={<PageLoader />}>
         <CountDownTimer />
+      </Suspense>
+    ),
+  },
+  {
+    path: "accordion",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Accordion />
       </Suspense>
     ),
   },

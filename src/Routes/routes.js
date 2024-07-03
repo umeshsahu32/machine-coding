@@ -26,7 +26,11 @@ const CountDownTimer = lazy(() =>
   import("../Components/CountDownTimer/CountDownTimer.jsx")
 );
 
-const NotFound = lazy(() => import("../Components/NotFound/NotFound.jsx"));
+const Accordion = lazy(() => import("../Components/Accordion/Accordion.jsx"));
+
+const NotFound = lazy(() =>
+  import("../Components/HelperComponent/NotFound/NotFound.jsx")
+);
 
 export {
   ImageCarousel,
@@ -36,5 +40,6 @@ export {
   RatingStar,
   MultiStepForm,
   CountDownTimer,
+  Accordion,
   NotFound,
 };

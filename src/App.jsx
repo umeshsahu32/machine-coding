@@ -8,6 +8,9 @@ function App() {
     <Fragment>
       <ul>
         <li>
+          <Link to="accordion">👉🏽&nbsp;&nbsp;Accordion</Link>
+        </li>
+        <li>
           <Link to="image-carousel">👉🏽&nbsp;&nbsp;Image Carousel</Link>
         </li>
         <li>
