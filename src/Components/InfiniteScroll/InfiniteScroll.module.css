@@ -1,0 +1,9 @@
+.head {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  place-content: center;
+  gap: 2rem;
+  width: 50%;
+  margin: auto;
+  margin-top: 2rem;
+}

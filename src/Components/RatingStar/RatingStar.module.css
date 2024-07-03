@@ -1,0 +1,41 @@
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.head h4 {
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  color: #24180a;
+}
+
+.star_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star {
+  margin: 10px;
+  font-size: 70px;
+}
+
+.star_button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.on {
+  color: #000;
+}
+
+.off {
+  color: #ccc;
+}
