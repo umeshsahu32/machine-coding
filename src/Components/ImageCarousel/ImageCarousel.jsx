@@ -9,6 +9,7 @@ const ImageCarousel = () => {
   const [imageIndex, setImageIndex] = useState(0);
   const [loading, setLoading] = useState(false);
 
+  // @ IMAGE FETCH API CALL
   const fetchImages = async () => {
     setLoading(true);
     const url = "https://dummyjson.com/products";
@@ -23,10 +24,7 @@ const ImageCarousel = () => {
     setLoading(false);
   };
 
-  useEffect(() => {
-    fetchImages();
-  }, []);
-
+  // @ HANDLE CLICK HANDLER
   const handleClick = (direction) => {
     const currentIndex = imageIndex;
     const lastIndex = imageList.length - 1;
@@ -49,6 +47,10 @@ const ImageCarousel = () => {
   };
 
   useEffect(() => {
+    fetchImages();
+  }, []);
+
+  useEffect(() => {
     const autoLoop = setInterval(() => {
       handleClick("right");
     }, 3000);
@@ -58,6 +60,7 @@ const ImageCarousel = () => {
     };
   }, [imageIndex]);
 
+  // @ JSX START
   return (
     <Fragment>
       {loading ? (

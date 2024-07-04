@@ -7,15 +7,21 @@ import "./index.css";
 import PageLoader from "./Components/HelperComponent/PageLoader/PageLoader";
 
 import {
-  ImageCarousel,
-  BarChart,
-  InfiniteScroll,
-  FilterItems,
-  RatingStar,
-  MultiStepForm,
-  CountDownTimer,
-  NotFound,
   Accordion,
+  AutoSuggestion,
+  BarChart,
+  Calculator,
+  CountDownTimer,
+  EmiCalculator,
+  FilterItems,
+  ImageCarousel,
+  InfiniteScroll,
+  ModalOverlay,
+  MultiStepForm,
+  ProgressBar,
+  RatingStar,
+  UndoableCounter,
+  NotFound,
 } from "./Routes/routes.js";
 
 const router = createBrowserRouter([
@@ -27,16 +33,22 @@ const router = createBrowserRouter([
       </Suspense>
     ),
   },
-
   {
-    path: "image-carousel",
+    path: "accordion",
     element: (
       <Suspense fallback={<PageLoader />}>
-        <ImageCarousel />
+        <Accordion />
       </Suspense>
     ),
   },
-
+  {
+    path: "auto-suggestion",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <AutoSuggestion />
+      </Suspense>
+    ),
+  },
   {
     path: "bar-chart",
     element: (
@@ -45,36 +57,11 @@ const router = createBrowserRouter([
       </Suspense>
     ),
   },
-
   {
-    path: "infinite-scroll",
+    path: "calculator",
     element: (
       <Suspense fallback={<PageLoader />}>
-        <InfiniteScroll />
-      </Suspense>
-    ),
-  },
-  {
-    path: "filter-items",
-    element: (
-      <Suspense fallback={<PageLoader />}>
-        <FilterItems />
-      </Suspense>
-    ),
-  },
-  {
-    path: "rating-star",
-    element: (
-      <Suspense fallback={<PageLoader />}>
-        <RatingStar />
-      </Suspense>
-    ),
-  },
-  {
-    path: "multi-step-form",
-    element: (
-      <Suspense fallback={<PageLoader />}>
-        <MultiStepForm />
+        <Calculator />
       </Suspense>
     ),
   },
@@ -87,10 +74,74 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "accordion",
+    path: "emi-calculator",
     element: (
       <Suspense fallback={<PageLoader />}>
-        <Accordion />
+        <EmiCalculator />
+      </Suspense>
+    ),
+  },
+  {
+    path: "filter-items",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <FilterItems />
+      </Suspense>
+    ),
+  },
+  {
+    path: "image-carousel",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <ImageCarousel />
+      </Suspense>
+    ),
+  },
+  {
+    path: "infinite-scroll",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <InfiniteScroll />
+      </Suspense>
+    ),
+  },
+  {
+    path: "modal-overlay",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <ModalOverlay />
+      </Suspense>
+    ),
+  },
+  {
+    path: "multi-step-form",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <MultiStepForm />
+      </Suspense>
+    ),
+  },
+  {
+    path: "progress-bar",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <ProgressBar />
+      </Suspense>
+    ),
+  },
+  {
+    path: "rating-star",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <RatingStar />
+      </Suspense>
+    ),
+  },
+  {
+    path: "undoable-counter",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <UndoableCounter />
       </Suspense>
     ),
   },
