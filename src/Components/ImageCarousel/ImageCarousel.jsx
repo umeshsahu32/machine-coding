@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import styles from "./ImageCarousel.module.css";
 import HeadingComponent from "../HelperComponent/HeadingComponent/HeadingComponent";
-import PageLoader from "../HelperComponent/PageLoader/PageLoader";
+import { PageLoader } from "../HelperComponent/PageLoader/PageLoader";
 
 const ImageCarousel = () => {
   const [imageList, setImageList] = useState([]);

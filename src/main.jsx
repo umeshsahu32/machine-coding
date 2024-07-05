@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "react-tooltip/dist/react-tooltip.css";
 import "./index.css";
-import PageLoader from "./Components/HelperComponent/PageLoader/PageLoader";
+import { PageLoader } from "./Components/HelperComponent/PageLoader/PageLoader";
 
 import {
   Accordion,
