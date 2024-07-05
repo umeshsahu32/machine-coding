@@ -23,6 +23,9 @@ const ImageCarousel = lazy(() =>
 const InfiniteScroll = lazy(() =>
   import("../Components/InfiniteScroll/InfiniteScroll.jsx")
 );
+const LoginOtpInput = lazy(() =>
+  import("../Components/LoginOtpInput/LoginOtpInput.jsx")
+);
 const ModalOverlay = lazy(() =>
   import("../Components/ModalOverlay/ModalOverlay.jsx")
 );
@@ -34,6 +37,9 @@ const ProgressBar = lazy(() =>
 );
 const RatingStar = lazy(() =>
   import("../Components/RatingStar/RatingStar.jsx")
+);
+const ShoppingList = lazy(() =>
+  import("../Components/ShoppingList/ShoppingList.jsx")
 );
 const UndoableCounter = lazy(() =>
   import("../Components/UndoableCounter/UndoableCounter.jsx")
@@ -52,10 +58,12 @@ export {
   FilterItems,
   ImageCarousel,
   InfiniteScroll,
+  LoginOtpInput,
   ModalOverlay,
   MultiStepForm,
   ProgressBar,
   RatingStar,
+  ShoppingList,
   UndoableCounter,
   NotFound,
 };

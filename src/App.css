@@ -4,23 +4,30 @@ body {
 
 ul {
   margin: 2rem;
+  column-count: 2;
+  max-width: 800px;
+  margin: 4rem auto;
 }
 
 ul li {
   margin: 2rem;
   list-style: none;
+  margin-top: 0;
+  width: 15rem;
 }
 
 ul li a {
   text-decoration: none;
   color: #0056b3;
   font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  display: inline-block;
   transition: transform 0.3s ease, font-size 0.3s ease;
 }
 
 ul li a:hover {
   transform: translateX(10px);
-  font-size: 1.1em;
 }
 
 /* @ HIDE ARROWS FROM NUMBER INPUT FIELD */

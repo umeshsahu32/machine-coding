@@ -16,10 +16,12 @@ import {
   FilterItems,
   ImageCarousel,
   InfiniteScroll,
+  LoginOtpInput,
   ModalOverlay,
   MultiStepForm,
   ProgressBar,
   RatingStar,
+  ShoppingList,
   UndoableCounter,
   NotFound,
 } from "./Routes/routes.js";
@@ -106,6 +108,14 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "login-otp",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <LoginOtpInput />
+      </Suspense>
+    ),
+  },
+  {
     path: "modal-overlay",
     element: (
       <Suspense fallback={<PageLoader />}>
@@ -134,6 +144,14 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={<PageLoader />}>
         <RatingStar />
+      </Suspense>
+    ),
+  },
+  {
+    path: "shopping-list",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <ShoppingList />
       </Suspense>
     ),
   },

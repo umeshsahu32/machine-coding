@@ -35,6 +35,9 @@ function App() {
           <Link to="infinite-scroll">👉🏽&nbsp;&nbsp;Infinite Scroll</Link>
         </li>
         <li>
+          <Link to="login-otp">👉🏽&nbsp;&nbsp;Login OTP</Link>
+        </li>
+        <li>
           <Link to="modal-overlay">👉🏽&nbsp;&nbsp;Modal Overlay</Link>
         </li>
         <li>
@@ -45,6 +48,9 @@ function App() {
         </li>
         <li>
           <Link to="rating-star">👉🏽&nbsp;&nbsp;Rating Star</Link>
+        </li>
+        <li>
+          <Link to="shopping-list">👉🏽&nbsp;&nbsp;Shopping List</Link>
         </li>
         <li>
           <Link to="undoable-counter">👉🏽&nbsp;&nbsp;Undoable Counter</Link>
