@@ -11,6 +11,9 @@ const Calculator = lazy(() =>
 const CountDownTimer = lazy(() =>
   import("../Components/CountDownTimer/CountDownTimer.jsx")
 );
+const DragAndDrop = lazy(() =>
+  import("../Components/DragAndDrop/DragAndDrop.jsx")
+);
 const EmiCalculator = lazy(() =>
   import("../Components/EmiCalculator/EmiCalculator.jsx")
 );
@@ -25,6 +28,9 @@ const InfiniteScroll = lazy(() =>
 );
 const LoginOtpInput = lazy(() =>
   import("../Components/LoginOtpInput/LoginOtpInput.jsx")
+);
+const MemoryGame = lazy(() =>
+  import("../Components/MemoryGame/MemoryGame.jsx")
 );
 const ModalOverlay = lazy(() =>
   import("../Components/ModalOverlay/ModalOverlay.jsx")
@@ -54,11 +60,13 @@ export {
   BarChart,
   Calculator,
   CountDownTimer,
+  DragAndDrop,
   EmiCalculator,
   FilterItems,
   ImageCarousel,
   InfiniteScroll,
   LoginOtpInput,
+  MemoryGame,
   ModalOverlay,
   MultiStepForm,
   ProgressBar,

@@ -23,6 +23,9 @@ function App() {
           <Link to="count-down-timer">👉🏽&nbsp;&nbsp;Count Down Timer</Link>
         </li>
         <li>
+          <Link to="drag-and-drop">👉🏽&nbsp;&nbsp;Drag & Drop</Link>
+        </li>
+        <li>
           <Link to="emi-calculator">👉🏽&nbsp;&nbsp;EMI Calculator</Link>
         </li>
         <li>
@@ -36,6 +39,9 @@ function App() {
         </li>
         <li>
           <Link to="login-otp">👉🏽&nbsp;&nbsp;Login OTP</Link>
+        </li>
+        <li>
+          <Link to="memory-game">👉🏽&nbsp;&nbsp;Memory Game</Link>
         </li>
         <li>
           <Link to="modal-overlay">👉🏽&nbsp;&nbsp;Modal Overlay</Link>

@@ -12,11 +12,13 @@ import {
   BarChart,
   Calculator,
   CountDownTimer,
+  DragAndDrop,
   EmiCalculator,
   FilterItems,
   ImageCarousel,
   InfiniteScroll,
   LoginOtpInput,
+  MemoryGame,
   ModalOverlay,
   MultiStepForm,
   ProgressBar,
@@ -76,6 +78,14 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "drag-and-drop",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <DragAndDrop />
+      </Suspense>
+    ),
+  },
+  {
     path: "emi-calculator",
     element: (
       <Suspense fallback={<PageLoader />}>
@@ -112,6 +122,14 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={<PageLoader />}>
         <LoginOtpInput />
+      </Suspense>
+    ),
+  },
+  {
+    path: "memory-game",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <MemoryGame />
       </Suspense>
     ),
   },

@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import notFoundImage from "../../assets/404_page_not_found.png";
+import notFoundImage from "../../../assets/404_page_not_found.png";
 import styles from "./NotFound.module.css";
 
 const NotFound = () => {
