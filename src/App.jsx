@@ -6,7 +6,7 @@ function App() {
   // @ JSX START
   return (
     <Fragment>
-      <ul>
+      <ul className="list_items">
         <li>
           <Link to="accordion">👉🏽&nbsp;&nbsp;Accordion</Link>
         </li>
