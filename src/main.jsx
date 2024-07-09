@@ -12,18 +12,25 @@ import {
   BarChart,
   Calculator,
   CountDownTimer,
+  CryptoConverter,
+  CustomTab,
   DragAndDrop,
   EmiCalculator,
   FilterItems,
   ImageCarousel,
   InfiniteScroll,
+  JobBoard,
   LoginOtpInput,
   MemoryGame,
   ModalOverlay,
   MultiStepForm,
   ProgressBar,
   RatingStar,
+  SelectableGrid,
   ShoppingList,
+  TicTacToe,
+  TransferList,
+  TreeViewFolder,
   UndoableCounter,
   NotFound,
 } from "./Routes/routes.js";
@@ -78,6 +85,22 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "crypto-converter",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <CryptoConverter />
+      </Suspense>
+    ),
+  },
+  {
+    path: "custom-tab",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <CustomTab />
+      </Suspense>
+    ),
+  },
+  {
     path: "drag-and-drop",
     element: (
       <Suspense fallback={<PageLoader />}>
@@ -114,6 +137,14 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={<PageLoader />}>
         <InfiniteScroll />
+      </Suspense>
+    ),
+  },
+  {
+    path: "job-board",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <JobBoard />
       </Suspense>
     ),
   },
@@ -166,10 +197,42 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "selectable-grid",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <SelectableGrid />
+      </Suspense>
+    ),
+  },
+  {
     path: "shopping-list",
     element: (
       <Suspense fallback={<PageLoader />}>
         <ShoppingList />
+      </Suspense>
+    ),
+  },
+  {
+    path: "tic-tac-toe",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <TicTacToe />
+      </Suspense>
+    ),
+  },
+  {
+    path: "transfer-list",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <TransferList />
+      </Suspense>
+    ),
+  },
+  {
+    path: "tree-view-folder",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <TreeViewFolder />
       </Suspense>
     ),
   },

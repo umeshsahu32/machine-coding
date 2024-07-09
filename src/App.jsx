@@ -23,6 +23,12 @@ function App() {
           <Link to="count-down-timer">👉🏽&nbsp;&nbsp;Count Down Timer</Link>
         </li>
         <li>
+          <Link to="crypto-converter">👉🏽&nbsp;&nbsp;Crypto Converter</Link>
+        </li>
+        <li>
+          <Link to="custom-tab">👉🏽&nbsp;&nbsp;Custom Tab</Link>
+        </li>
+        <li>
           <Link to="drag-and-drop">👉🏽&nbsp;&nbsp;Drag & Drop</Link>
         </li>
         <li>
@@ -36,6 +42,9 @@ function App() {
         </li>
         <li>
           <Link to="infinite-scroll">👉🏽&nbsp;&nbsp;Infinite Scroll</Link>
+        </li>
+        <li>
+          <Link to="job-board">👉🏽&nbsp;&nbsp;Job Board</Link>
         </li>
         <li>
           <Link to="login-otp">👉🏽&nbsp;&nbsp;Login OTP</Link>
@@ -56,7 +65,19 @@ function App() {
           <Link to="rating-star">👉🏽&nbsp;&nbsp;Rating Star</Link>
         </li>
         <li>
+          <Link to="selectable-grid">👉🏽&nbsp;&nbsp;Selectable Grid</Link>
+        </li>
+        <li>
           <Link to="shopping-list">👉🏽&nbsp;&nbsp;Shopping List</Link>
+        </li>
+        <li>
+          <Link to="tic-tac-toe">👉🏽&nbsp;&nbsp;Tic Tac Toe</Link>
+        </li>
+        <li>
+          <Link to="transfer-list">👉🏽&nbsp;&nbsp;Transfer List</Link>
+        </li>
+        <li>
+          <Link to="tree-view-folder">👉🏽&nbsp;&nbsp;Tree View Folder</Link>
         </li>
         <li>
           <Link to="undoable-counter">👉🏽&nbsp;&nbsp;Undoable Counter</Link>

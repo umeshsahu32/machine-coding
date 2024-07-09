@@ -1,0 +1,99 @@
+.parent_container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.box {
+  width: 250px;
+  border: 2px solid #6c3428;
+  height: 320px;
+  overflow-y: auto;
+}
+
+.box ul {
+  column-count: 1;
+  margin: 0;
+}
+
+.box ul li {
+  background-color: #dfa878;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #6c3428;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #6c3428;
+}
+
+.box ul li:last-child {
+  border: none;
+}
+
+.checked {
+  background-color: #6c3428 !important;
+  color: #dfa878 !important;
+  border-bottom: 2px solid #dfa878 !important;
+}
+
+.action_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.action_btn button {
+  padding: 15px 25px;
+  min-width: 6rem;
+  border: unset;
+  border-radius: 15px;
+  color: #6c3428;
+  z-index: 1;
+  background: #dfa878;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.action_btn button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #ba704f;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+.action_btn button:hover {
+  color: #cee6f3;
+}
+
+.action_btn button:hover::before {
+  width: 100%;
+}

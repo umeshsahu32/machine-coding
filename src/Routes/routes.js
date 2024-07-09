@@ -11,6 +11,10 @@ const Calculator = lazy(() =>
 const CountDownTimer = lazy(() =>
   import("../Components/CountDownTimer/CountDownTimer.jsx")
 );
+const CryptoConverter = lazy(() =>
+  import("../Components/CryptoConverter/CryptoConverter.jsx")
+);
+const CustomTab = lazy(() => import("../Components/CustomTab/CustomTab.jsx"));
 const DragAndDrop = lazy(() =>
   import("../Components/DragAndDrop/DragAndDrop.jsx")
 );
@@ -26,6 +30,7 @@ const ImageCarousel = lazy(() =>
 const InfiniteScroll = lazy(() =>
   import("../Components/InfiniteScroll/InfiniteScroll.jsx")
 );
+const JobBoard = lazy(() => import("../Components/JobBoard/JobBoard.jsx"));
 const LoginOtpInput = lazy(() =>
   import("../Components/LoginOtpInput/LoginOtpInput.jsx")
 );
@@ -44,9 +49,20 @@ const ProgressBar = lazy(() =>
 const RatingStar = lazy(() =>
   import("../Components/RatingStar/RatingStar.jsx")
 );
+const SelectableGrid = lazy(() =>
+  import("../Components/SelectableGrid/SelectableGrid.jsx")
+);
 const ShoppingList = lazy(() =>
   import("../Components/ShoppingList/ShoppingList.jsx")
 );
+const TicTacToe = lazy(() => import("../Components/TicTacToe/TicTacToe.jsx"));
+const TransferList = lazy(() =>
+  import("../Components/TransferList/TransferList.jsx")
+);
+const TreeViewFolder = lazy(() =>
+  import("../Components/TreeViewFolder/TreeViewFolder.jsx")
+);
+
 const UndoableCounter = lazy(() =>
   import("../Components/UndoableCounter/UndoableCounter.jsx")
 );
@@ -60,18 +76,25 @@ export {
   BarChart,
   Calculator,
   CountDownTimer,
+  CryptoConverter,
+  CustomTab,
   DragAndDrop,
   EmiCalculator,
   FilterItems,
   ImageCarousel,
   InfiniteScroll,
+  JobBoard,
   LoginOtpInput,
   MemoryGame,
   ModalOverlay,
   MultiStepForm,
   ProgressBar,
   RatingStar,
+  SelectableGrid,
   ShoppingList,
+  TicTacToe,
+  TransferList,
+  TreeViewFolder,
   UndoableCounter,
   NotFound,
 };
