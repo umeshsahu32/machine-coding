@@ -1,0 +1,62 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 80vh;
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.input_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.input_container input,
+.input_container select {
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.currency_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.red {
+  color: red !important;
+}
+
+.green {
+  color: green !important;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  color: blueviolet;
+}
