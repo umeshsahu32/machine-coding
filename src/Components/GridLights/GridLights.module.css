@@ -1,0 +1,27 @@
+.grid_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.grid_light {
+  display: grid;
+  max-width: 300px;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  border: 1px solid red;
+}
+
+.grid_cell {
+  background-color: transparent;
+  border: 1px solid #303030;
+  height: 0;
+  padding-bottom: 100%;
+  cursor: pointer;
+}
+
+.grid_cell_activated {
+  background-color: rgb(58, 83, 21);
+}

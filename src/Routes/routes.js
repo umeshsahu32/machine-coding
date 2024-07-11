@@ -24,6 +24,12 @@ const EmiCalculator = lazy(() =>
 const FilterItems = lazy(() =>
   import("../Components/FilterItems/FilterItems.jsx")
 );
+const FormValidation = lazy(() =>
+  import("../Components/FormValidation/FormValidation.jsx")
+);
+const GridLights = lazy(() =>
+  import("../Components/GridLights/GridLights.jsx")
+);
 const ImageCarousel = lazy(() =>
   import("../Components/ImageCarousel/ImageCarousel.jsx")
 );
@@ -31,6 +37,9 @@ const InfiniteScroll = lazy(() =>
   import("../Components/InfiniteScroll/InfiniteScroll.jsx")
 );
 const JobBoard = lazy(() => import("../Components/JobBoard/JobBoard.jsx"));
+const LikeButton = lazy(() =>
+  import("../Components/LikeButtons/LikeButton.jsx")
+);
 const LoginOtpInput = lazy(() =>
   import("../Components/LoginOtpInput/LoginOtpInput.jsx")
 );
@@ -42,6 +51,9 @@ const ModalOverlay = lazy(() =>
 );
 const MultiStepForm = lazy(() =>
   import("../Components/MultiStepForm/MultiStepForm.jsx")
+);
+const PasswordGenerator = lazy(() =>
+  import("../Components/PasswordGenerator/PasswordGenerator.jsx")
 );
 const ProgressBar = lazy(() =>
   import("../Components/ProgressBar/ProgressBar.jsx")
@@ -81,13 +93,17 @@ export {
   DragAndDrop,
   EmiCalculator,
   FilterItems,
+  FormValidation,
+  GridLights,
   ImageCarousel,
   InfiniteScroll,
   JobBoard,
+  LikeButton,
   LoginOtpInput,
   MemoryGame,
   ModalOverlay,
   MultiStepForm,
+  PasswordGenerator,
   ProgressBar,
   RatingStar,
   SelectableGrid,

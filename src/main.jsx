@@ -17,13 +17,17 @@ import {
   DragAndDrop,
   EmiCalculator,
   FilterItems,
+  FormValidation,
+  GridLights,
   ImageCarousel,
   InfiniteScroll,
   JobBoard,
+  LikeButton,
   LoginOtpInput,
   MemoryGame,
   ModalOverlay,
   MultiStepForm,
+  PasswordGenerator,
   ProgressBar,
   RatingStar,
   SelectableGrid,
@@ -125,6 +129,22 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "form-validation",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <FormValidation />
+      </Suspense>
+    ),
+  },
+  {
+    path: "grid-lights",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <GridLights />
+      </Suspense>
+    ),
+  },
+  {
     path: "image-carousel",
     element: (
       <Suspense fallback={<PageLoader />}>
@@ -145,6 +165,14 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={<PageLoader />}>
         <JobBoard />
+      </Suspense>
+    ),
+  },
+  {
+    path: "like-button",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <LikeButton />
       </Suspense>
     ),
   },
@@ -177,6 +205,14 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={<PageLoader />}>
         <MultiStepForm />
+      </Suspense>
+    ),
+  },
+  {
+    path: "password-generator",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <PasswordGenerator />
       </Suspense>
     ),
   },
@@ -220,6 +256,7 @@ const router = createBrowserRouter([
       </Suspense>
     ),
   },
+
   {
     path: "transfer-list",
     element: (

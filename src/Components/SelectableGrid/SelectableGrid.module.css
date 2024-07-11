@@ -1,0 +1,37 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 600px;
+  width: 600px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #95a9e9;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+}
+
+.selected_cell {
+  background-color: #f3bee6;
+  border: 2px solid #d81da9;
+  font-weight: 700;
+}

@@ -38,6 +38,12 @@ function App() {
           <Link to="filter-items">👉🏽&nbsp;&nbsp;Filter Items</Link>
         </li>
         <li>
+          <Link to="form-validation">👉🏽&nbsp;&nbsp;Form Validation</Link>
+        </li>
+        <li>
+          <Link to="grid-lights">👉🏽&nbsp;&nbsp;Grid Lights</Link>
+        </li>
+        <li>
           <Link to="image-carousel">👉🏽&nbsp;&nbsp;Image Carousel</Link>
         </li>
         <li>
@@ -45,6 +51,9 @@ function App() {
         </li>
         <li>
           <Link to="job-board">👉🏽&nbsp;&nbsp;Job Board</Link>
+        </li>
+        <li>
+          <Link to="like-button">👉🏽&nbsp;&nbsp;Like Button</Link>
         </li>
         <li>
           <Link to="login-otp">👉🏽&nbsp;&nbsp;Login OTP</Link>
@@ -57,6 +66,9 @@ function App() {
         </li>
         <li>
           <Link to="multi-step-form">👉🏽&nbsp;&nbsp;Multi Step Form</Link>
+        </li>
+        <li>
+          <Link to="password-generator">👉🏽&nbsp;&nbsp;Password Generator</Link>
         </li>
         <li>
           <Link to="progress-bar">👉🏽&nbsp;&nbsp;Progress Bar</Link>

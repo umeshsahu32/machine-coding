@@ -1,0 +1,33 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.container {
+  width: 100%;
+  margin-left: 1rem;
+}
+
+.folder {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.2rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.folder button {
+  background-color: transparent;
+  border: none;
+  margin-right: 1rem;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+
+.expand {
+  transform: rotate(90deg);
+}
