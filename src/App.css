@@ -3,9 +3,9 @@ body {
 }
 
 ul {
-  margin: 2rem;
-  column-count: 2;
-  max-width: 800px;
+  margin: 5rem;
+  column-count: 3;
+  max-width: 1000px;
   margin: 4rem auto;
 }
 

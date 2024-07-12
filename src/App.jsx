@@ -35,7 +35,13 @@ function App() {
           <Link to="emi-calculator">👉🏽&nbsp;&nbsp;EMI Calculator</Link>
         </li>
         <li>
+          <Link to="employee-database">👉🏽&nbsp;&nbsp;Employee Database</Link>
+        </li>
+        <li>
           <Link to="filter-items">👉🏽&nbsp;&nbsp;Filter Items</Link>
+        </li>
+        <li>
+          <Link to="form-stepper">👉🏽&nbsp;&nbsp;Form Stepper</Link>
         </li>
         <li>
           <Link to="form-validation">👉🏽&nbsp;&nbsp;Form Validation</Link>

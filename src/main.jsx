@@ -16,7 +16,9 @@ import {
   CustomTab,
   DragAndDrop,
   EmiCalculator,
+  EmployeeDatabase,
   FilterItems,
+  FormStepper,
   FormValidation,
   GridLights,
   ImageCarousel,
@@ -121,10 +123,26 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "employee-database",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <EmployeeDatabase />
+      </Suspense>
+    ),
+  },
+  {
     path: "filter-items",
     element: (
       <Suspense fallback={<PageLoader />}>
         <FilterItems />
+      </Suspense>
+    ),
+  },
+  {
+    path: "form-stepper",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <FormStepper />
       </Suspense>
     ),
   },

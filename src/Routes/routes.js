@@ -21,8 +21,14 @@ const DragAndDrop = lazy(() =>
 const EmiCalculator = lazy(() =>
   import("../Components/EmiCalculator/EmiCalculator.jsx")
 );
+const EmployeeDatabase = lazy(() =>
+  import("../Components/EmployeeDatabase/EmployeeDatabase.jsx")
+);
 const FilterItems = lazy(() =>
   import("../Components/FilterItems/FilterItems.jsx")
+);
+const FormStepper = lazy(() =>
+  import("../Components/FormStepper/FormStepper.jsx")
 );
 const FormValidation = lazy(() =>
   import("../Components/FormValidation/FormValidation.jsx")
@@ -92,7 +98,9 @@ export {
   CustomTab,
   DragAndDrop,
   EmiCalculator,
+  EmployeeDatabase,
   FilterItems,
+  FormStepper,
   FormValidation,
   GridLights,
   ImageCarousel,
