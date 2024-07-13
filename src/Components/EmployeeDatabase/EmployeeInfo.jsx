@@ -69,9 +69,6 @@ const EmployeeInfo = ({ employee, onClick }) => {
         <div className={styles.employee_head}>
           <h3></h3>
           <h3>Employee Info</h3>
-          <button onClick={onClick}>
-            <span>Add Employee</span>
-          </button>
         </div>
         {employee ? (
           <div className={styles.info_container}>
@@ -79,7 +76,7 @@ const EmployeeInfo = ({ employee, onClick }) => {
               src={employee?.imageUrl}
               alt={`${employee.firstName} ${employee.lastName}`}
             />
-            <span className={styles.employeeHeading}>
+            <span className={styles.employee_name}>
               {employee.firstName} {employee.lastName} ({employee.age})
             </span>
             <span>{employee.address}</span>

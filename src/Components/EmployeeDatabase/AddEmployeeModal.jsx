@@ -1,7 +1,26 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import styles from "./EmployeeDatabase.module.css";
 
-const AddEmployeeModal = ({ onClose, onSave }) => {
+const Input = ({ type, name, value, onChange, placeholder, error, max }) => {
+  return (
+    <Fragment>
+      <input
+        type={type}
+        name={name}
+        value={value}
+        onChange={onChange}
+        placeholder={placeholder}
+        max={max}
+        required={name === "imageUrl" ? false : true}
+      />
+      {error && <p>{error}</p>}
+    </Fragment>
+  );
+};
+
+const AddEmployeeModal = ({ onClose, onSave, employee, onUpdate }) => {
+  console.log(employee);
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -40,67 +59,114 @@ const AddEmployeeModal = ({ onClose, onSave }) => {
     });
   };
 
+  console.log("formData", formData);
+
+  const handleEdit = (e) => {
+    e.preventDefault();
+    const updateEmployee = {
+      ...formData,
+      age: new Date().getFullYear() - parseInt(formData.dob.slice(0, 4), 10),
+      imageUrl:
+        formData.imageUrl || "https://cdn-icons-png.flaticon.com/512/0/93.png",
+    };
+    onUpdate(updateEmployee);
+    setFormData({
+      firstName: "",
+      lastName: "",
+      address: "",
+      email: "",
+      contactNumber: "",
+      dob: "",
+      imageUrl: "",
+    });
+    onClose();
+  };
+
+  useEffect(() => {
+    if (employee) {
+      setFormData(employee);
+    }
+  }, []);
+
   return (
     <Fragment>
       <div
         className={styles.addEmployee}
         onClick={(e) => e.target.className === styles.addEmployee && onClose()}
       >
-        <form className={styles.addEmployeeCreate} onSubmit={handleSubmit}>
-          <input
+        <form className={styles.addEmployeeCreate}>
+          <Input
+            type="text"
             name="firstName"
             value={formData.firstName}
             onChange={handleChange}
             placeholder="First Name"
-            required
+            max=""
+            error={""}
           />
-          <input
+
+          <Input
+            type="text"
             name="lastName"
             value={formData.lastName}
             onChange={handleChange}
             placeholder="Last Name"
-            required
+            max=""
+            error={""}
           />
-          <input
+
+          <Input
+            type="text"
             name="address"
             value={formData.address}
             onChange={handleChange}
             placeholder="Address"
-            required
+            max=""
+            error={""}
           />
-          <input
+
+          <Input
+            type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
             placeholder="Email"
-            required
+            max=""
+            error={""}
           />
-          <input
+
+          <Input
+            type="number"
             name="contactNumber"
             value={formData.contactNumber}
             onChange={handleChange}
             placeholder="Contact Number"
-            required
+            max=""
+            error={""}
           />
-          <input
-            name="dob"
+
+          <Input
             type="date"
+            name="dob"
             value={formData.dob}
             onChange={handleChange}
             max={`${new Date().getFullYear() - 18}-${new Date()
               .toISOString()
               .slice(5, 10)}`}
-            required
+            error={""}
           />
-          <input
+
+          <Input
+            type="text"
             name="imageUrl"
             value={formData.imageUrl}
             onChange={handleChange}
             placeholder="Image URL (optional)"
+            max=""
+            error={""}
           />
-          {/* <button type="submit">Add Employee</button> */}
-          <button type="submit">
-            <span>Add Employee</span>
+          <button onClick={employee ? handleEdit : handleSubmit}>
+            <span>{employee ? "Update Employee" : "Add Employee"}</span>
           </button>
         </form>
       </div>
