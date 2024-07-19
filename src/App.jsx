@@ -71,6 +71,9 @@ function App() {
           <Link to="modal-overlay">👉🏽&nbsp;&nbsp;Modal Overlay</Link>
         </li>
         <li>
+          <Link to="multi-select-pills">👉🏽&nbsp;&nbsp;Multi Select Pills</Link>
+        </li>
+        <li>
           <Link to="multi-step-form">👉🏽&nbsp;&nbsp;Multi Step Form</Link>
         </li>
         <li>
@@ -80,16 +83,25 @@ function App() {
           <Link to="progress-bar">👉🏽&nbsp;&nbsp;Progress Bar</Link>
         </li>
         <li>
+          <Link to="quiz">👉🏽&nbsp;&nbsp;Quiz</Link>
+        </li>
+        <li>
           <Link to="rating-star">👉🏽&nbsp;&nbsp;Rating Star</Link>
         </li>
         <li>
           <Link to="selectable-grid">👉🏽&nbsp;&nbsp;Selectable Grid</Link>
         </li>
         <li>
+          <Link to="shopping-cart">👉🏽&nbsp;&nbsp;Shopping Cart</Link>
+        </li>
+        <li>
           <Link to="shopping-list">👉🏽&nbsp;&nbsp;Shopping List</Link>
         </li>
         <li>
           <Link to="tic-tac-toe">👉🏽&nbsp;&nbsp;Tic Tac Toe</Link>
+        </li>
+        <li>
+          <Link to="timeline">👉🏽&nbsp;&nbsp;Timeline</Link>
         </li>
         <li>
           <Link to="transfer-list">👉🏽&nbsp;&nbsp;Transfer List</Link>
@@ -99,6 +111,9 @@ function App() {
         </li>
         <li>
           <Link to="undoable-counter">👉🏽&nbsp;&nbsp;Undoable Counter</Link>
+        </li>
+        <li>
+          <Link to="services">👉🏽&nbsp;&nbsp;Services</Link>
         </li>
       </ul>
     </Fragment>

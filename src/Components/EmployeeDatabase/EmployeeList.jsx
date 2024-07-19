@@ -15,8 +15,8 @@ const EmployeeList = ({
     <Fragment>
       <div className={styles.list_container}>
         <div className={styles.employee_head}>
-          <h3></h3>
-          <h3>Employee Info</h3>
+          <h5></h5>
+          <h5>Employee Info</h5>
           <button onClick={onClick}>
             <span>Add Employee</span>
           </button>

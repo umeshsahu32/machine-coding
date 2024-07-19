@@ -3,8 +3,11 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
 import "react-tooltip/dist/react-tooltip.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
 import { PageLoader } from "./Components/HelperComponent/PageLoader/PageLoader";
+import { store } from "./store";
+import { Provider } from "react-redux";
 
 import {
   Accordion,
@@ -28,17 +31,22 @@ import {
   LoginOtpInput,
   MemoryGame,
   ModalOverlay,
+  MultiSelectPills,
   MultiStepForm,
   PasswordGenerator,
   ProgressBar,
+  Quiz,
   RatingStar,
   SelectableGrid,
+  ShoppingCart,
   ShoppingList,
   TicTacToe,
+  Timeline,
   TransferList,
   TreeViewFolder,
   UndoableCounter,
   NotFound,
+  Services,
 } from "./Routes/routes.js";
 
 const router = createBrowserRouter([
@@ -219,6 +227,14 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "multi-select-pills",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <MultiSelectPills />
+      </Suspense>
+    ),
+  },
+  {
     path: "multi-step-form",
     element: (
       <Suspense fallback={<PageLoader />}>
@@ -243,6 +259,14 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "quiz",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Quiz />
+      </Suspense>
+    ),
+  },
+  {
     path: "rating-star",
     element: (
       <Suspense fallback={<PageLoader />}>
@@ -259,6 +283,14 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "shopping-cart",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <ShoppingCart />
+      </Suspense>
+    ),
+  },
+  {
     path: "shopping-list",
     element: (
       <Suspense fallback={<PageLoader />}>
@@ -271,6 +303,15 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={<PageLoader />}>
         <TicTacToe />
+      </Suspense>
+    ),
+  },
+
+  {
+    path: "timeline",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Timeline />
       </Suspense>
     ),
   },
@@ -300,6 +341,14 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "services",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Services />
+      </Suspense>
+    ),
+  },
+  {  
     path: "*",
     element: (
       <Suspense fallback={<PageLoader />}>
@@ -311,6 +360,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );

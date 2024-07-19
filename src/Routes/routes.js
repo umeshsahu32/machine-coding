@@ -55,6 +55,9 @@ const MemoryGame = lazy(() =>
 const ModalOverlay = lazy(() =>
   import("../Components/ModalOverlay/ModalOverlay.jsx")
 );
+const MultiSelectPills = lazy(() =>
+  import("../Components/MultiSelectPills/MultiSelectPills.jsx")
+);
 const MultiStepForm = lazy(() =>
   import("../Components/MultiStepForm/MultiStepForm.jsx")
 );
@@ -64,16 +67,21 @@ const PasswordGenerator = lazy(() =>
 const ProgressBar = lazy(() =>
   import("../Components/ProgressBar/ProgressBar.jsx")
 );
+const Quiz = lazy(() => import("../Components/QuizApp/QuizApp.jsx"));
 const RatingStar = lazy(() =>
   import("../Components/RatingStar/RatingStar.jsx")
 );
 const SelectableGrid = lazy(() =>
   import("../Components/SelectableGrid/SelectableGrid.jsx")
 );
+const ShoppingCart = lazy(() =>
+  import("../Components/ShoppingCart/ShoppingCart.jsx")
+);
 const ShoppingList = lazy(() =>
   import("../Components/ShoppingList/ShoppingList.jsx")
 );
 const TicTacToe = lazy(() => import("../Components/TicTacToe/TicTacToe.jsx"));
+const Timeline = lazy(() => import("../Components/Timeline/Timeline.jsx"));
 const TransferList = lazy(() =>
   import("../Components/TransferList/TransferList.jsx")
 );
@@ -87,6 +95,7 @@ const UndoableCounter = lazy(() =>
 const NotFound = lazy(() =>
   import("../Components/HelperComponent/NotFound/NotFound.jsx")
 );
+const Services = lazy(() => import("../Components/Services/Services.jsx"));
 
 export {
   Accordion,
@@ -110,15 +119,20 @@ export {
   LoginOtpInput,
   MemoryGame,
   ModalOverlay,
+  MultiSelectPills,
   MultiStepForm,
   PasswordGenerator,
   ProgressBar,
+  Quiz,
   RatingStar,
   SelectableGrid,
+  ShoppingCart,
   ShoppingList,
   TicTacToe,
+  Timeline,
   TransferList,
   TreeViewFolder,
   UndoableCounter,
   NotFound,
+  Services,
 };

@@ -6,7 +6,7 @@ ul {
   margin: 5rem;
   column-count: 3;
   max-width: 1000px;
-  margin: 4rem auto;
+  margin: 4rem auto !important;
 }
 
 ul li {

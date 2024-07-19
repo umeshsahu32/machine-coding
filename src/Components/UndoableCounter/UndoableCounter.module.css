@@ -114,7 +114,12 @@
 }
 
 .history_list {
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 !important;
+  padding: 0;
 }
 
 .history_list li {
@@ -126,6 +131,7 @@
   cursor: pointer;
   font-size: 1.2rem;
   border-bottom: 1px solid #ffe8e8;
+  width: 100%;
 }
 
 .history_list li:hover {
