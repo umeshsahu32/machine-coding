@@ -99,6 +99,8 @@ const Services = lazy(() => import("../Components/Services/Services.jsx"));
 const Features = lazy(() => import("../Components/features/Features.jsx"));
 const Blogs = lazy(() => import("../Components/Blogs/Blogs.jsx"));
 const Teams = lazy(() => import("../Components/Teams/Teams.jsx"));
+const CaseCard = lazy(() => import("../Components/CaseCard/CaseCard.jsx"));
+const ContactUs = lazy(() => import("../Components/ContactUs/ContactUs.jsx"));
 
 export {
   Accordion,
@@ -141,4 +143,6 @@ export {
   Features,
   Blogs,
   Teams,
+  CaseCard,
+  ContactUs,
 };

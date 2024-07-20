@@ -124,6 +124,12 @@ function App() {
         <li>
           <Link to="teams">👉🏽&nbsp;&nbsp;Teams</Link>
         </li>
+        <li>
+          <Link to="case">👉🏽&nbsp;&nbsp;Case Card</Link>
+        </li>
+        <li>
+          <Link to="contact-us">👉🏽&nbsp;&nbsp;Contact Us</Link>
+        </li>
       </ul>
     </Fragment>
   );

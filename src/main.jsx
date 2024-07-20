@@ -50,6 +50,8 @@ import {
   Features,
   Blogs,
   Teams,
+  CaseCard,
+  ContactUs,
 } from "./Routes/routes.js";
 
 const router = createBrowserRouter([
@@ -372,6 +374,22 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={<PageLoader />}>
         <Teams />
+      </Suspense>
+    ),
+  },
+  {
+    path: "case",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <CaseCard />
+      </Suspense>
+    ),
+  },
+  {
+    path: "contact-us",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <ContactUs />
       </Suspense>
     ),
   },
