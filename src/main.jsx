@@ -47,6 +47,9 @@ import {
   UndoableCounter,
   NotFound,
   Services,
+  Features,
+  Blogs,
+  Teams,
 } from "./Routes/routes.js";
 
 const router = createBrowserRouter([
@@ -348,7 +351,31 @@ const router = createBrowserRouter([
       </Suspense>
     ),
   },
-  {  
+  {
+    path: "features",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Features />
+      </Suspense>
+    ),
+  },
+  {
+    path: "blogs",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Blogs />
+      </Suspense>
+    ),
+  },
+  {
+    path: "teams",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Teams />
+      </Suspense>
+    ),
+  },
+  {
     path: "*",
     element: (
       <Suspense fallback={<PageLoader />}>

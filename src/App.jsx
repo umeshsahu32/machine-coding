@@ -115,6 +115,15 @@ function App() {
         <li>
           <Link to="services">👉🏽&nbsp;&nbsp;Services</Link>
         </li>
+        <li>
+          <Link to="features">👉🏽&nbsp;&nbsp;Features</Link>
+        </li>
+        <li>
+          <Link to="blogs">👉🏽&nbsp;&nbsp;Blogs</Link>
+        </li>
+        <li>
+          <Link to="teams">👉🏽&nbsp;&nbsp;Teams</Link>
+        </li>
       </ul>
     </Fragment>
   );

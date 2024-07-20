@@ -96,6 +96,9 @@ const NotFound = lazy(() =>
   import("../Components/HelperComponent/NotFound/NotFound.jsx")
 );
 const Services = lazy(() => import("../Components/Services/Services.jsx"));
+const Features = lazy(() => import("../Components/features/Features.jsx"));
+const Blogs = lazy(() => import("../Components/Blogs/Blogs.jsx"));
+const Teams = lazy(() => import("../Components/Teams/Teams.jsx"));
 
 export {
   Accordion,
@@ -135,4 +138,7 @@ export {
   UndoableCounter,
   NotFound,
   Services,
+  Features,
+  Blogs,
+  Teams,
 };
