@@ -101,6 +101,9 @@ const Blogs = lazy(() => import("../Components/Blogs/Blogs.jsx"));
 const Teams = lazy(() => import("../Components/Teams/Teams.jsx"));
 const CaseCard = lazy(() => import("../Components/CaseCard/CaseCard.jsx"));
 const ContactUs = lazy(() => import("../Components/ContactUs/ContactUs.jsx"));
+const PillCarousel = lazy(() =>
+  import("../Components/PillCarousel/PillCarousel.jsx")
+);
 
 export {
   Accordion,
@@ -145,4 +148,5 @@ export {
   Teams,
   CaseCard,
   ContactUs,
+  PillCarousel,
 };

@@ -52,6 +52,7 @@ import {
   Teams,
   CaseCard,
   ContactUs,
+  PillCarousel,
 } from "./Routes/routes.js";
 
 const router = createBrowserRouter([
@@ -390,6 +391,14 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={<PageLoader />}>
         <ContactUs />
+      </Suspense>
+    ),
+  },
+  {
+    path: "pills",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <PillCarousel />
       </Suspense>
     ),
   },

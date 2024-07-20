@@ -130,6 +130,9 @@ function App() {
         <li>
           <Link to="contact-us">👉🏽&nbsp;&nbsp;Contact Us</Link>
         </li>
+        <li>
+          <Link to="pills">👉🏽&nbsp;&nbsp;Pills</Link>
+        </li>
       </ul>
     </Fragment>
   );
