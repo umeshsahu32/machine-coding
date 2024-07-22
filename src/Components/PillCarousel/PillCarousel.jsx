@@ -1,9 +1,9 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef, Fragment } from "react";
 import styles from "./PillCarousel.module.css";
 import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
+import HeadingComponent from "../HelperComponent/HeadingComponent/HeadingComponent";
 
 const Pills = ({ items }) => {
-  const [scrollPosition, setScrollPosition] = useState(0);
   const carouselRef = useRef(null);
 
   const scroll = (direction) => {
@@ -13,23 +13,6 @@ const Pills = ({ items }) => {
       container.scrollBy({ left: scrollAmount, behavior: "smooth" });
     }
   };
-
-  useEffect(() => {
-    const container = carouselRef.current;
-    if (container) {
-      const handleScroll = () => {
-        setScrollPosition(container.scrollLeft);
-      };
-      container.addEventListener("scroll", handleScroll);
-      return () => container.removeEventListener("scroll", handleScroll);
-    }
-  }, []);
-
-  const showLeftButton = scrollPosition > 0;
-  const showRightButton =
-    carouselRef.current &&
-    scrollPosition <
-      carouselRef.current.scrollWidth - carouselRef.current.clientWidth;
 
   return (
     <div className={styles.carouselContainer}>
@@ -77,9 +60,12 @@ function PillCarousel() {
   ];
 
   return (
-    <div className={styles.container}>
-      <Pills items={items} />
-    </div>
+    <Fragment>
+      <HeadingComponent heading="Pills Carousel" />
+      <div className={styles.container}>
+        <Pills items={items} />
+      </div>
+    </Fragment>
   );
 }
 

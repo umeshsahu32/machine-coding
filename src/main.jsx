@@ -13,9 +13,12 @@ import {
   Accordion,
   AutoSuggestion,
   BarChart,
+  Breadcrumbs,
   Calculator,
+  CardCarousel,
   CountDownTimer,
   CryptoConverter,
+  CurrencyConverter,
   CustomTab,
   DragAndDrop,
   EmiCalculator,
@@ -33,6 +36,7 @@ import {
   ModalOverlay,
   MultiSelectPills,
   MultiStepForm,
+  Pagination,
   PasswordGenerator,
   ProgressBar,
   Quiz,
@@ -89,10 +93,26 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: "breadcrumbs",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Breadcrumbs />
+      </Suspense>
+    ),
+  },
+  {
     path: "calculator",
     element: (
       <Suspense fallback={<PageLoader />}>
         <Calculator />
+      </Suspense>
+    ),
+  },
+  {
+    path: "card-carousel",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <CardCarousel />
       </Suspense>
     ),
   },
@@ -109,6 +129,14 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={<PageLoader />}>
         <CryptoConverter />
+      </Suspense>
+    ),
+  },
+  {
+    path: "currency-converter",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <CurrencyConverter />
       </Suspense>
     ),
   },
@@ -245,6 +273,14 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={<PageLoader />}>
         <MultiStepForm />
+      </Suspense>
+    ),
+  },
+  {
+    path: "pagination",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Pagination />
       </Suspense>
     ),
   },

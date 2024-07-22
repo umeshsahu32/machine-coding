@@ -5,14 +5,23 @@ const AutoSuggestion = lazy(() =>
   import("../Components/AutoSuggestion/AutoSuggestion.jsx")
 );
 const BarChart = lazy(() => import("../Components/BarChart/BarChart.jsx"));
+const Breadcrumbs = lazy(() =>
+  import("../Components/Breadcrumbs/Breadcrumbs.jsx")
+);
 const Calculator = lazy(() =>
   import("../Components/Calculator/Calculator.jsx")
+);
+const CardCarousel = lazy(() =>
+  import("../Components/CardCarousel/CardCarousel.jsx")
 );
 const CountDownTimer = lazy(() =>
   import("../Components/CountDownTimer/CountDownTimer.jsx")
 );
 const CryptoConverter = lazy(() =>
   import("../Components/CryptoConverter/CryptoConverter.jsx")
+);
+const CurrencyConverter = lazy(() =>
+  import("../Components/CurrencyConverter/CurrencyConverter.jsx")
 );
 const CustomTab = lazy(() => import("../Components/CustomTab/CustomTab.jsx"));
 const DragAndDrop = lazy(() =>
@@ -60,6 +69,9 @@ const MultiSelectPills = lazy(() =>
 );
 const MultiStepForm = lazy(() =>
   import("../Components/MultiStepForm/MultiStepForm.jsx")
+);
+const Pagination = lazy(() =>
+  import("../Components/Pagination/Pagination.jsx")
 );
 const PasswordGenerator = lazy(() =>
   import("../Components/PasswordGenerator/PasswordGenerator.jsx")
@@ -109,9 +121,12 @@ export {
   Accordion,
   AutoSuggestion,
   BarChart,
+  Breadcrumbs,
   Calculator,
+  CardCarousel,
   CountDownTimer,
   CryptoConverter,
+  CurrencyConverter,
   CustomTab,
   DragAndDrop,
   EmiCalculator,
@@ -129,6 +144,7 @@ export {
   ModalOverlay,
   MultiSelectPills,
   MultiStepForm,
+  Pagination,
   PasswordGenerator,
   ProgressBar,
   Quiz,

@@ -17,13 +17,24 @@ function App() {
           <Link to="bar-chart">👉🏽&nbsp;&nbsp;Bar Chart</Link>
         </li>
         <li>
+          <Link to="breadcrumbs">👉🏽&nbsp;&nbsp;Breadcrumbs (Incomplete)</Link>
+        </li>
+        <li>
           <Link to="calculator">👉🏽&nbsp;&nbsp;Calculator</Link>
+        </li>
+        <li>
+          <Link to="card-carousel">
+            👉🏽&nbsp;&nbsp;Card Carousel (Incomplete)
+          </Link>
         </li>
         <li>
           <Link to="count-down-timer">👉🏽&nbsp;&nbsp;Count Down Timer</Link>
         </li>
         <li>
           <Link to="crypto-converter">👉🏽&nbsp;&nbsp;Crypto Converter</Link>
+        </li>
+        <li>
+          <Link to="currency-converter">👉🏽&nbsp;&nbsp;Currency Converter</Link>
         </li>
         <li>
           <Link to="custom-tab">👉🏽&nbsp;&nbsp;Custom Tab</Link>
@@ -71,13 +82,21 @@ function App() {
           <Link to="modal-overlay">👉🏽&nbsp;&nbsp;Modal Overlay</Link>
         </li>
         <li>
-          <Link to="multi-select-pills">👉🏽&nbsp;&nbsp;Multi Select Pills</Link>
+          <Link to="multi-select-pills">
+            👉🏽&nbsp;&nbsp;Multi Select Pills (Incomplete)
+          </Link>
         </li>
         <li>
           <Link to="multi-step-form">👉🏽&nbsp;&nbsp;Multi Step Form</Link>
         </li>
         <li>
+          <Link to="pagination">👉🏽&nbsp;&nbsp;Pagination (Incomplete)</Link>
+        </li>
+        <li>
           <Link to="password-generator">👉🏽&nbsp;&nbsp;Password Generator</Link>
+        </li>
+        <li>
+          <Link to="pills">👉🏽&nbsp;&nbsp;Pills Carousel</Link>
         </li>
         <li>
           <Link to="progress-bar">👉🏽&nbsp;&nbsp;Progress Bar</Link>
@@ -101,9 +120,6 @@ function App() {
           <Link to="tic-tac-toe">👉🏽&nbsp;&nbsp;Tic Tac Toe</Link>
         </li>
         <li>
-          <Link to="timeline">👉🏽&nbsp;&nbsp;Timeline</Link>
-        </li>
-        <li>
           <Link to="transfer-list">👉🏽&nbsp;&nbsp;Transfer List</Link>
         </li>
         <li>
@@ -111,27 +127,6 @@ function App() {
         </li>
         <li>
           <Link to="undoable-counter">👉🏽&nbsp;&nbsp;Undoable Counter</Link>
-        </li>
-        <li>
-          <Link to="services">👉🏽&nbsp;&nbsp;Services</Link>
-        </li>
-        <li>
-          <Link to="features">👉🏽&nbsp;&nbsp;Features</Link>
-        </li>
-        <li>
-          <Link to="blogs">👉🏽&nbsp;&nbsp;Blogs</Link>
-        </li>
-        <li>
-          <Link to="teams">👉🏽&nbsp;&nbsp;Teams</Link>
-        </li>
-        <li>
-          <Link to="case">👉🏽&nbsp;&nbsp;Case Card</Link>
-        </li>
-        <li>
-          <Link to="contact-us">👉🏽&nbsp;&nbsp;Contact Us</Link>
-        </li>
-        <li>
-          <Link to="pills">👉🏽&nbsp;&nbsp;Pills</Link>
         </li>
       </ul>
     </Fragment>
