@@ -61,6 +61,9 @@ import {
   PillCarousel,
 } from "./Routes/routes.js";
 import Section03 from "./Components/AajTak/Section03/Section03.jsx";
+import Section04 from "./Components/AajTak/Section04/Section04.jsx";
+import Section05 from "./Components/AajTak/Section05/Section05.jsx";
+import Section06 from "./Components/AajTak/Section06/Section06.jsx";
 
 const router = createBrowserRouter([
   {
@@ -464,6 +467,33 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={<PageLoader />}>
         <Section03 />
+      </Suspense>
+    ),
+  },
+
+  {
+    path: "section-04",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Section04 />
+      </Suspense>
+    ),
+  },
+
+  {
+    path: "section-05",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Section05 />
+      </Suspense>
+    ),
+  },
+
+  {
+    path: "section-06",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Section06 />
       </Suspense>
     ),
   },

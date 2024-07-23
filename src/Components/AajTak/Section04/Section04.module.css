@@ -1,0 +1,165 @@
+.container {
+  position: relative;
+  display: flex;
+  height: 500px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+}
+
+.reviewCard {
+  position: relative;
+  width: 16rem;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #d8e8fc;
+  padding: 1rem;
+  transition: background-color 0.3s;
+  margin-right: 1rem;
+}
+
+.reviewCard:hover {
+  background-color: #a3c0e4;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avatar {
+  border-radius: 9999px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+.username {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.body {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.marquee {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marqueeContent {
+  display: flex;
+  gap: 1rem;
+  animation: scroll 20s linear infinite;
+}
+
+.reverse .marqueeContent {
+  animation-direction: reverse;
+}
+
+.paused .marqueeContent {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.customDuration {
+  --duration: 20s;
+}
+
+.gradientLeft,
+.gradientRight {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 33.333333%;
+}
+
+.gradientLeft {
+  left: 0;
+  background: linear-gradient(to right, #ffffff, transparent);
+}
+
+.gradientRight {
+  right: 0;
+  background: linear-gradient(to left, #ffffff, transparent);
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: #1f2937;
+  }
+
+  .reviewCard {
+    border-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .reviewCard:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .name {
+    color: #ffffff;
+  }
+
+  .username {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .gradientLeft {
+    background: linear-gradient(to right, #1f2937, transparent);
+  }
+
+  .gradientRight {
+    background: linear-gradient(to left, #1f2937, transparent);
+  }
+}
+
+.playIconWrapper {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  background-color: #8fc0fc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.user_name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
