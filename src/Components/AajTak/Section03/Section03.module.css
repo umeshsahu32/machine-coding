@@ -1,0 +1,100 @@
+.cardSection {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.card {
+  width: 280px;
+  height: 320px;
+  /* background: linear-gradient(to bottom, #59d337 0%, #111827 60%); */
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.logoContainer {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.logo {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background-color: transparent;
+}
+
+.playIconWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: #ffffff44;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card:hover .playIconWrapper {
+  opacity: 1;
+}
+
+.playIcon {
+  cursor: pointer;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 0 10px;
+}
+
+.stats {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.percentage {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.description {
+  font-size: 0.8rem;
+  color: #e0e0e0;
+}
+
+.link {
+  color: #f97316;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .playIconWrapper {
+    opacity: 1;
+  }
+}

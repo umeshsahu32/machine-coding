@@ -8,6 +8,8 @@ import "./index.css";
 import { PageLoader } from "./Components/HelperComponent/PageLoader/PageLoader";
 import { store } from "./store";
 import { Provider } from "react-redux";
+import Section01 from "./Components/AajTak/Section01/Section01.jsx";
+import Section02 from "./Components/AajTak/Section02/Section02.jsx";
 
 import {
   Accordion,
@@ -58,6 +60,7 @@ import {
   ContactUs,
   PillCarousel,
 } from "./Routes/routes.js";
+import Section03 from "./Components/AajTak/Section03/Section03.jsx";
 
 const router = createBrowserRouter([
   {
@@ -438,6 +441,33 @@ const router = createBrowserRouter([
       </Suspense>
     ),
   },
+  {
+    path: "section-01",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Section01 />
+      </Suspense>
+    ),
+  },
+
+  {
+    path: "section-02",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Section02 />
+      </Suspense>
+    ),
+  },
+
+  {
+    path: "section-03",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Section03 />
+      </Suspense>
+    ),
+  },
+
   {
     path: "*",
     element: (

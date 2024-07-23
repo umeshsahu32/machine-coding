@@ -1,0 +1,84 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.103);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #1f2937;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.closing {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #374151;
+}
+
+.modalHeader h2 {
+  margin: 0;
+  color: #fff;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.modalBody {
+  padding: 1rem;
+}
+
+.modalBody iframe {
+  border-radius: 4px;
+}
+
+.loadingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.123);
+  z-index: 10;
+}
+
+.youtubeIcon {
+  font-size: 3em;
+  color: #fff;
+}
+
+iframe {
+  z-index: 1;
+}
