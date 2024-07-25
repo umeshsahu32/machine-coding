@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "image": "http://dummyimage.com/178x100.png/ff4444/ffffff",
+    "date": "02.06.2024",
+    "title": "Evolving Systems, Inc.",
+    "category": "Angry Video Game Nerd: The Movie",
+    "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus."
+  },
+  {
+    "id": 2,
+    "image": "http://dummyimage.com/167x100.png/ff4444/ffffff",
+    "date": "16.04.2024",
+    "title": "Sound Financial Bancorp, Inc.",
+    "category": "Violet & Daisy",
+    "description": "Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam."
+  },
+  {
+    "id": 3,
+    "image": "http://dummyimage.com/105x100.png/cc0000/ffffff",
+    "date": "27.04.2024",
+    "title": "Ellington Residential Mortgage REIT",
+    "category": "Woman on the Beach, The",
+    "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede."
+  },
+  {
+    "id": 4,
+    "image": "http://dummyimage.com/243x100.png/dddddd/000000",
+    "date": "20.10.2023",
+    "title": "Wells Fargo & Company",
+    "category": "Halloween",
+    "description": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum."
+  },
+  {
+    "id": 5,
+    "image": "http://dummyimage.com/143x100.png/5fa2dd/ffffff",
+    "date": "25.06.2024",
+    "title": "First Data Corporation",
+    "category": "Buttcrack",
+    "description": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem."
+  },
+  {
+    "id": 6,
+    "image": "http://dummyimage.com/180x100.png/dddddd/000000",
+    "date": "24.07.2023",
+    "title": "Athersys, Inc.",
+    "category": "Son of the Mask",
+    "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus."
+  },
+  {
+    "id": 7,
+    "image": "http://dummyimage.com/230x100.png/5fa2dd/ffffff",
+    "date": "18.04.2024",
+    "title": "Chiasma, Inc.",
+    "category": "Fifth Element, The",
+    "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus."
+  },
+  {
+    "id": 8,
+    "image": "http://dummyimage.com/244x100.png/dddddd/000000",
+    "date": "12.07.2024",
+    "title": "Nuveen S&P 500 Dynamic Overwrite Fund",
+    "category": "Garfield Gets Real",
+    "description": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet."
+  },
+  {
+    "id": 9,
+    "image": "http://dummyimage.com/139x100.png/dddddd/000000",
+    "date": "21.08.2023",
+    "title": "Adient plc",
+    "category": "Just Cause",
+    "description": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+  },
+  {
+    "id": 10,
+    "image": "http://dummyimage.com/154x100.png/dddddd/000000",
+    "date": "17.07.2024",
+    "title": "Microsemi Corporation",
+    "category": "Major Barbara",
+    "description": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus."
+  },
+  {
+    "id": 11,
+    "image": "http://dummyimage.com/138x100.png/ff4444/ffffff",
+    "date": "25.07.2023",
+    "title": "First Mid-Illinois Bancshares, Inc.",
+    "category": "Godzilla's Revenge (Gojira-Minira-Gabara: Oru Kaijû Daishingeki) (All Monsters Attack)",
+    "description": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit."
+  },
+  {
+    "id": 12,
+    "image": "http://dummyimage.com/226x100.png/ff4444/ffffff",
+    "date": "21.03.2024",
+    "title": "AMC Networks Inc.",
+    "category": "Passing Fancy (Dekigokoro)",
+    "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede."
+  },
+  {
+    "id": 13,
+    "image": "http://dummyimage.com/243x100.png/ff4444/ffffff",
+    "date": "14.03.2024",
+    "title": "Novus Therapeutics, Inc.",
+    "category": "Night Will Fall",
+    "description": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum."
+  },
+  {
+    "id": 14,
+    "image": "http://dummyimage.com/236x100.png/dddddd/000000",
+    "date": "13.04.2024",
+    "title": "WisdomTree Japan Hedged SmallCap Equity Fund",
+    "category": "Snatch",
+    "description": "Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat."
+  },
+  {
+    "id": 15,
+    "image": "http://dummyimage.com/133x100.png/cc0000/ffffff",
+    "date": "25.04.2024",
+    "title": "Citigroup Inc.",
+    "category": "Pushover",
+    "description": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris."
+  },
+  {
+    "id": 16,
+    "image": "http://dummyimage.com/153x100.png/5fa2dd/ffffff",
+    "date": "05.02.2024",
+    "title": "Endeavour Silver Corporation",
+    "category": "Seventh Continent, The (Der siebente Kontinent)",
+    "description": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis."
+  },
+  {
+    "id": 17,
+    "image": "http://dummyimage.com/157x100.png/dddddd/000000",
+    "date": "28.02.2024",
+    "title": "Ares Management L.P.",
+    "category": "Caine Mutiny Court-Martial, The",
+    "description": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti."
+  },
+  {
+    "id": 18,
+    "image": "http://dummyimage.com/107x100.png/5fa2dd/ffffff",
+    "date": "23.12.2023",
+    "title": "Liberty Interactive Corporation",
+    "category": "Keith Lemon: The Film",
+    "description": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+  },
+  {
+    "id": 19,
+    "image": "http://dummyimage.com/213x100.png/cc0000/ffffff",
+    "date": "02.07.2024",
+    "title": "Galectin Therapeutics Inc.",
+    "category": "Ghosts (Gespenster)",
+    "description": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat."
+  },
+  {
+    "id": 20,
+    "image": "http://dummyimage.com/178x100.png/dddddd/000000",
+    "date": "02.06.2024",
+    "title": "Nuveen High Income 2020 Target Term Fund",
+    "category": "Never a Dull Moment",
+    "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+  }
+]

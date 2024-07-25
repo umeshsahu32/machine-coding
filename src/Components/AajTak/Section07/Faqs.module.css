@@ -1,0 +1,73 @@
+/* src/components/FAQ.module.css */
+.faqContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+
+.faqItem {
+  margin-bottom: 20px;
+  border: 1px solid var(--color-button-1);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.faqItem:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faqQuestion {
+  background-color: transparent;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  gap: 1rem;
+}
+
+.faqQuestion:hover {
+  background-color: var(--color-button-1);
+  color: #fff;
+}
+
+.active_border {
+  background-color: var(--color-button-1);
+  color: #fff;
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  background-color: #fff;
+  padding: 0 15px;
+}
+
+.faqAnswer.active {
+  max-height: 200px; /* Adjust based on your content */
+  padding: 15px;
+}
+
+.icon {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media (max-width: 480px) {
+  .faqQuestion {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .faqAnswer {
+    font-size: 14px;
+  }
+
+  .faqAnswer.active {
+    max-height: 300px; /* Adjust based on your content */
+  }
+}

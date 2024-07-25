@@ -7,6 +7,18 @@
   font-family: "Poppins";
 }
 
+:root {
+  --bg-light: #181c24;
+  --color-white: #fff;
+  --color-primary: #181c24;
+  --color-secondary: #303030;
+  --color-tertiary: #555;
+  --color-button-1: #00a859;
+  --color-button-2: #07864a;
+  --color-button-3: #0d3422;
+  --font-family-1: "system-ui";
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

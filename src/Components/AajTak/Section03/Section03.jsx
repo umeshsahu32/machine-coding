@@ -7,6 +7,7 @@ import image4 from "../../../assets/image-4.webp";
 import image5 from "../../../assets/image-5.webp";
 import image6 from "../../../assets/image-6.webp";
 import VideoModal from "./VideoModal";
+import Section08 from "../Section08/Section08";
 
 const PlayIcon = ({ onClick }) => (
   <svg viewBox="0 0 24 24" width="32" height="32" onClick={onClick}>
@@ -99,12 +100,10 @@ const Section03 = () => {
             <div className={styles.logoContainer}>
               <img src={item.logo} alt="Company Logo" className={styles.logo} />
               <div className={styles.playIconWrapper}>
-                <PlayIcon
+                <Section08
                   onClick={(e) =>
                     videoIconBtnClickHandler(e, item.title, item.videoId)
                   }
-                  title={item.title}
-                  videoId={item.videoId}
                 />
               </div>
             </div>

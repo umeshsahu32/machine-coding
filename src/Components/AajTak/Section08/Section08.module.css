@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+/* PlayIcon.module.css */
+.playIconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px; /* Reduced from 100px */
+  height: 60px; /* Reduced from 100px */
+  border-radius: 50%;
+}
+
+.playIcon {
+  width: 48px; /* Reduced from 80px */
+  height: 48px; /* Reduced from 80px */
+  background-color: tomato;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 1.5s ease-out infinite;
+  cursor: pointer;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent; /* Reduced from 15px */
+  border-bottom: 9px solid transparent; /* Reduced from 15px */
+  border-left: 15px solid white; /* Reduced from 25px */
+  margin-left: 3px; /*Reduced from 5px */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 99, 71, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 9px rgba(255, 99, 71, 0); /* Reduced from 15px */
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 99, 71, 0);
+  }
+}
