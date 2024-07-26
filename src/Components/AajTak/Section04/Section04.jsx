@@ -184,7 +184,6 @@ const Section04 = () => {
   const closeModal = () => setIsModalOpen(false);
 
   const videoIconBtnClickHandler = (e, title, video) => {
-    console.log("title, video", title, video);
     e.preventDefault();
     setTitle(title);
     setVideoId(video);

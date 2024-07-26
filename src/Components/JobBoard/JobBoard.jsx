@@ -49,7 +49,6 @@ const JobBoard = () => {
       return res;
     });
     const results = await Promise.all(apiCalls);
-    console.log(results);
     if (results.length) {
       const newArr = results.map((item) => {
         const { title, hiringText } = extractTitleAndHiringText(item.title);
@@ -63,8 +62,6 @@ const JobBoard = () => {
         };
         return obj;
       });
-
-      console.log("newArr", newArr);
 
       let copyPostMetadata = [...postMetadata];
       copyPostMetadata = [...copyPostMetadata, ...newArr];
@@ -81,13 +78,11 @@ const JobBoard = () => {
       setPostIDs(copyIds);
     }
   };
-  console.log("postIds ", postIDs);
 
   const fetchPostIDs = async () => {
     setShowLoader(true);
     const url = "https://hacker-news.firebaseio.com/v0/jobstories.json";
     const data = await getDataFn(url);
-    console.log(data);
     const ids = data.splice(0, 9); //60 records-> 9-> 51
     setPostIDs(data);
     fetchPostMetadata(ids);

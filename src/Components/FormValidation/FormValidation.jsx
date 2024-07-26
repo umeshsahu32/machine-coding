@@ -55,8 +55,6 @@ const FormValidation = () => {
   const [formData, setFormData] = useState(defaultValues);
   const [isPassMatch, setIsPassMatch] = useState(true);
 
-  console.log(Object.keys(formData));
-
   const handleInput = (e) => {
     const { name, value } = e.target;
     const copyFormData = { ...formData };
@@ -64,7 +62,6 @@ const FormValidation = () => {
     setFormData(copyFormData);
     isValidForm();
   };
-  console.log(formData);
 
   const passwordMatch = () => {
     const copyFormData = { ...formData };

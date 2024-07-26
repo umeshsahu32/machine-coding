@@ -60,7 +60,6 @@ const DragAndDrop = () => {
 
   const handleDrop = (e) => {
     const status = e.target.getAttribute("data-status"); //TODO,DOING,DONE
-    console.log("dropping ", status);
     if (status === TASK) {
       handleDragNDrop(TASK);
     } else if (status === PROGRESS) {

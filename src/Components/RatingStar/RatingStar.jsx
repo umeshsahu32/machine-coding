@@ -6,12 +6,6 @@ const RatingStar = () => {
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
 
-  console.log("rating ", rating);
-
-  console.log("hover ", hover);
-
-  console.log("((rating && hover) || hover) ", (rating && hover) || hover);
-
   return (
     <Fragment>
       <HeadingComponent heading="Rating Star" />

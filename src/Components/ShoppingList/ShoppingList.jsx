@@ -26,8 +26,6 @@ const ShoppingList = () => {
     }
   }, [inputVal]);
 
-  console.log("dataList", dataList);
-
   const handleShoppingList = (e, idx) => {
     e.preventDefault();
     if (idx) {
@@ -42,8 +40,6 @@ const ShoppingList = () => {
     }
     setInputVal("");
   };
-
-  console.log("bucketList", bucketList);
 
   const handleRightClick = (id) => {
     const copyBucketList = [...bucketList];

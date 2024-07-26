@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import HeadingComponent from "../HelperComponent/HeadingComponent/HeadingComponent";
 import styles from "./CustomTab.module.css";
-
 import Tabs from "./Tabs";
 
 const DummyButton = () => {

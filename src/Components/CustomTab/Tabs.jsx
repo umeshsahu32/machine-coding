@@ -12,7 +12,6 @@ const Tabs = (props) => {
     const headers = [];
     const map = {};
     React.Children.forEach(children, (element) => {
-      console.log("element-->", element);
       if (!React.isValidElement(element)) return;
       const { title } = element.props;
       headers.push(title);

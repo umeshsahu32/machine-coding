@@ -21,9 +21,6 @@ const QuizApp = () => {
     setUserAnswers([]);
   };
 
-  console.log("userAnswers", userAnswers);
-  console.log("currentQuestion", currentQuestion);
-
   return (
     <Fragment>
       <HeadingComponent heading="Quiz App" />

@@ -11,7 +11,6 @@ const TicTacToe = () => {
   const handleUserClick = (e) => {
     if (!won) {
       const position = e.target.id;
-      console.log(position);
       const copyMatrix = [...matrix];
       copyMatrix[position] = isXTurn ? "X" : "O";
       setIsXTurn(!isXTurn);

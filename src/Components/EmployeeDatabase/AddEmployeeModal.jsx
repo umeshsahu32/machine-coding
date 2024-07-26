@@ -19,8 +19,6 @@ const Input = ({ type, name, value, onChange, placeholder, error, max }) => {
 };
 
 const AddEmployeeModal = ({ onClose, onSave, employee, onUpdate }) => {
-  console.log(employee);
-
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -58,8 +56,6 @@ const AddEmployeeModal = ({ onClose, onSave, employee, onUpdate }) => {
       imageUrl: "",
     });
   };
-
-  console.log("formData", formData);
 
   const handleEdit = (e) => {
     e.preventDefault();

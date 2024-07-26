@@ -47,12 +47,10 @@ const GridLights = () => {
     const newOrder = [...order, index];
     setOrder(newOrder);
     //!DEACTIVATION OF CELLS
-    console.log(config.flat(1));
     if (newOrder.length === config.flat(1).filter(Boolean).length) {
       deactivateCells();
     }
   };
-  console.log("order", order);
 
   return (
     <Fragment>

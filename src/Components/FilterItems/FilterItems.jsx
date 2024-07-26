@@ -11,7 +11,6 @@ const FilterItems = () => {
 
   const handleFilterClick = (e) => {
     const category = e.target.id;
-    console.log(category);
     if (activeFilters.includes(category)) {
       //toggle false
       const filters = activeFilters.filter((el) => el !== category);

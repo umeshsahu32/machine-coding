@@ -10,8 +10,6 @@ const Accordion = () => {
     setActiveIndex(index === activeIndex ? null : index);
   };
 
-  console.log("Data", questions);
-
   //   @ JSX START
   return (
     <Fragment>

@@ -3,7 +3,6 @@ import styles from "./UndoableCounter.module.css";
 import HeadingComponent from "../HelperComponent/HeadingComponent/HeadingComponent";
 
 function HistoryDisplay({ history }) {
-  console.log(history);
   return (
     <Fragment>
       {history.length > 0 ? (
@@ -31,7 +30,6 @@ const UndoableCounter = () => {
   const MAX_REDO = 5;
 
   const maintainedHistory = (key, prevVal, currVal) => {
-    console.log(key, prevVal, currVal);
     const obj = {
       action: key,
       prevVal,

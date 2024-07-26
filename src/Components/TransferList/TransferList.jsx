@@ -56,7 +56,6 @@ const TransferList = () => {
         const copyList = [...leftBoxItem];
         const checkList = copyList.filter((item) => item.checked);
         const unCheckList = copyList.filter((item) => !item.checked);
-        console.log("unCheckList", unCheckList);
         setRightBoxItem(resetItems([...rightBoxItem, ...checkList]));
         setLeftBoxItem(unCheckList);
       }

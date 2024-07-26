@@ -40,8 +40,6 @@ const MultiSelectPills = () => {
     fetchUsers();
   }, [searchTerm]);
 
-  console.log("suggestions", suggestions);
-
   // const handleRemoveUser = (user) => {
   //   const updatedUsers = selectedUsers.filter(
   //     (selectedUser) => selectedUser.id !== user.id

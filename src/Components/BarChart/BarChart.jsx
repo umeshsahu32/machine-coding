@@ -34,7 +34,6 @@ const BarChart = () => {
   const fetchData = async () => {
     const result = await axios.get(API_URL);
     if (result.status === 200) {
-      console.log(result.data);
       const data = CountFn(result.data);
       setFrequency(data);
     }

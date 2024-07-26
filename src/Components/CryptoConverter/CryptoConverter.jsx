@@ -13,7 +13,6 @@ const CryptoConverter = () => {
 
   const handleCurrencyType = (e) => {
     const type = e.target.value;
-    console.log(type);
     setSelectedCurrency(type);
   };
 
@@ -22,13 +21,10 @@ const CryptoConverter = () => {
       const url = `https://api.frontendeval.com/fake/crypto/${selectedCurrency}`;
       const result = await axios.get(url);
       const val = result.data.value;
-      console.log("val", val);
       const showCurr = currency * val;
       setConvertedCurr(showCurr.toFixed(2));
 
       const prevVal = window.sessionStorage.getItem("prevVal");
-      console.log("prevVal : ", prevVal);
-      console.log("currVal: ", showCurr.toFixed(2));
       const diff = showCurr.toFixed(2) - prevVal;
       diff < 0 ? setIsUp(false) : setIsUp(true);
       setDiff(diff.toFixed(2));

@@ -38,12 +38,6 @@ const CheckoutStepper = ({ stepsConfig = [] }) => {
     return ((currentStep - 1) / (stepsConfig.length - 1)) * 100;
   };
 
-  console.log(
-    "calculateProgressBarWidth",
-    currentStep,
-    calculateProgressBarWidth()
-  );
-
   const ActiveComponent = stepsConfig[currentStep - 1]?.Component;
 
   const resetBtnClickHandler = () => {

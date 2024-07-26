@@ -58,7 +58,6 @@ const MultiStepForm = () => {
     }
 
     if (index === forms.length - 1) {
-      console.log("Submitted Form Data", formData);
       setFormData({
         name: "",
         email: "",

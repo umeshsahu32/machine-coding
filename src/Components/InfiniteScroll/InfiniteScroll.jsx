@@ -42,8 +42,6 @@ const InfiniteScroll = () => {
     fetchFirstPage();
   }, []);
 
-  console.log("images", images, images.length);
-
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       const target = entries[0];

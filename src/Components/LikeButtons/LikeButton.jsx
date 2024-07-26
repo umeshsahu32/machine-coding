@@ -23,13 +23,10 @@ const LikeButton = () => {
         }),
       });
 
-      console.log("response", response);
-
       if (response.status >= 200 && response.status < 300) {
         setLiked(!liked);
       } else {
         const res = await response.json();
-        console.log("res message-->", res);
         setError(res.message);
         return;
       }
