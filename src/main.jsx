@@ -66,6 +66,7 @@ import Section05 from "./Components/AajTak/Section05/Section05.jsx";
 import Section06 from "./Components/AajTak/Section06/Section06.jsx";
 import Section07 from "./Components/AajTak/Section07/Section07.jsx";
 import Section08 from "./Components/AajTak/Section08/Section08.jsx";
+import Section09 from "./Components/AajTak/Section09/Section09.jsx";
 
 const router = createBrowserRouter([
   {
@@ -514,6 +515,14 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={<PageLoader />}>
         <Section08 />
+      </Suspense>
+    ),
+  },
+  {
+    path: "section-09",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Section09 />
       </Suspense>
     ),
   },

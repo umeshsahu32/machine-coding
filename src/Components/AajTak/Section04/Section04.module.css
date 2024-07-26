@@ -1,7 +1,7 @@
 .container {
   position: relative;
   display: flex;
-  height: 500px;
+  /* height: 500px; */
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -11,8 +11,9 @@
   gap: 2rem;
   overflow: hidden;
   border-radius: 0.5rem;
-  border: 1px solid #e5e7eb;
-  background-color: #ffffff;
+  /* border: 1px solid #e5e7eb; */
+  background-color: var(--color-white);
+  margin-top: 5rem;
 }
 
 .reviewCard {
@@ -21,26 +22,40 @@
   cursor: pointer;
   overflow: hidden;
   border-radius: 0.75rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #d8e8fc;
+  border: 1px solid var(--color-button-1);
+  background-color: var(--color-white);
   padding: 1rem;
   transition: background-color 0.3s;
+}
+
+.reviewCard:last-child {
   margin-right: 1rem;
 }
 
 .reviewCard:hover {
-  background-color: #a3c0e4;
+  background-color: var(--color-button-1);
+  color: var(--color-white);
 }
 
 .cardHeader {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 0.5rem;
 }
 
 .avatar {
-  border-radius: 9999px;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border: 1px solid var(--color-button-1);
+  color: var(--color-button-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s ease;
 }
 
 .userInfo {
@@ -49,20 +64,32 @@
 }
 
 .name {
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #000000;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
 }
 
 .username {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   font-weight: 500;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--color-tertiary);
 }
 
-.body {
+.description {
   margin-top: 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
+  color: var(--color-tertiary);
+}
+
+.reviewCard:hover .avatar {
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+}
+
+.reviewCard:hover .name,
+.reviewCard:hover .username,
+.reviewCard:hover .description {
+  color: var(--color-white);
 }
 
 .marquee {
@@ -74,7 +101,7 @@
 .marqueeContent {
   display: flex;
   gap: 1rem;
-  animation: scroll 20s linear infinite;
+  animation: scroll 40s linear infinite;
 }
 
 .reverse .marqueeContent {
@@ -107,7 +134,7 @@
   width: 33.333333%;
 }
 
-.gradientLeft {
+/* .gradientLeft {
   left: 0;
   background: linear-gradient(to right, #ffffff, transparent);
 }
@@ -115,7 +142,7 @@
 .gradientRight {
   right: 0;
   background: linear-gradient(to left, #ffffff, transparent);
-}
+} */
 
 /* Dark mode styles */
 @media (prefers-color-scheme: dark) {
@@ -162,4 +189,33 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .reviewCard {
+    width: 14rem;
+    padding: 0.8rem;
+  }
+
+  .name {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .username {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+
+  .avatar {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
 }
