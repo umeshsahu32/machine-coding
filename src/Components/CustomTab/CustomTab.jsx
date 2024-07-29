@@ -27,6 +27,6 @@ const CustomTab = () => {
       </div>
     </Fragment>
   );
-};
+};   
 
 export default CustomTab;

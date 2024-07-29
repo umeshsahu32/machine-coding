@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins";
+  font-family: "Kropotkin Light";
 }
 
 :root {
@@ -17,6 +17,29 @@
   --color-button-2: #07864a;
   --color-button-3: #0d3422;
   --font-family-1: "system-ui";
+}
+
+/* Kropotkin Light */
+@font-face {
+  font-family: "Kropotkin Light";
+  src: url("./assets/fonts/kropotkin_light.ttf") format("truetype");
+  font-weight: 400; /* Black weight is typically 900 */
+  font-style: normal;
+}
+
+/* Roboto Black Italic */
+@font-face {
+  font-family: "Gazpacho Medium";
+  src: url("./assets/fonts/GAZPACHO\ MEDIUM.TTF") format("truetype");
+  font-weight: 400; /* Black weight is typically 900 */
+}
+
+/* Roboto Bold */
+@font-face {
+  font-family: "Gazpacho Regular";
+  src: url("./fonts/GAZPACHO REGULAR.TTF") format("truetype");
+  font-weight: 400; /* Bold weight is typically 700 */
+  font-style: normal;
 }
 
 @tailwind base;
