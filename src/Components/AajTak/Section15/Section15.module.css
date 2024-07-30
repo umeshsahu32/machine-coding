@@ -1,0 +1,264 @@
+.section15 {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.number_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8rem;
+  width: 100%;
+}
+
+.content {
+  /* flex: 1; */
+  margin-top: 3rem;
+  width: 37% !important;
+}
+
+.title {
+  font-size: 8rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+.description {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.submitButton {
+  align-self: flex-end;
+  padding: 15px 30px;
+  background-color: transparent;
+  color: var(--color-button-1);
+  border: 1px solid var(--color-button-1);
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.4rem;
+  margin-top: 4rem;
+}
+
+.submitButton span {
+  transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: var(--color-button-1);
+  color: var(--color-white);
+}
+
+.submitButton:hover span:last-child {
+  transform: translateX(10px);
+}
+
+.btnEnable {
+  display: none;
+}
+
+.countContainer {
+  font-size: 24rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.count {
+  background: linear-gradient(45deg, #4a90e2, #8e44ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.plus {
+  background: linear-gradient(45deg, #4a90e2, #8e44ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: zoomOut ease-in-out 0.5s forwards;
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1200px) {
+  .title {
+    text-align: center;
+    font-size: 6rem;
+  }
+
+  .number_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 0 2rem;
+  }
+  .content {
+    /* flex: 1; */
+    min-width: 450px;
+  }
+
+  .countContainer {
+    font-size: 16rem;
+    font-weight: bold;
+    line-height: 1.1;
+    min-width: 400px;
+  }
+
+  .submitButton {
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .title {
+    text-align: center;
+    font-size: 5rem;
+  }
+
+  .number_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 0 2rem;
+  }
+  .content {
+    min-width: 350px;
+    margin-top: 1rem;
+  }
+
+  .countContainer {
+    font-size: 12rem;
+    font-weight: bold;
+    line-height: 1.1;
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section15 {
+    padding: 4rem 1rem;
+  }
+  .title {
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+
+  .number_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 0 2rem;
+  }
+  .content {
+    min-width: 350px;
+    margin-top: 1rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+
+  .countContainer {
+    font-size: 8rem;
+    font-weight: bold;
+    line-height: 1.1;
+    min-width: 200px;
+  }
+
+  .submitButton {
+    padding: 8px 18px;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 668px) {
+  .section15 {
+    padding: 4rem 2rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .number_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+    gap: 1rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    min-width: 100%;
+  }
+
+  .description {
+    margin-bottom: 0;
+    max-width: 70%;
+    text-align: left !important ;
+    font-size: 1.2rem;
+    margin-right: auto;
+  }
+
+  .submitButton {
+    display: none;
+  }
+
+  .btnEnable {
+    display: block;
+    display: flex;
+    margin-top: 0;
+  }
+
+  .submitButton {
+    align-self: flex-start;
+  }
+
+  .countContainer {
+    font-size: 8rem;
+    font-weight: bold;
+    line-height: 1.1;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .description {
+    margin-bottom: 0;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}

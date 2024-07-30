@@ -2,7 +2,7 @@ body {
   background-color: #ffe8e8;
 }
 
-ul {
+/* ul {
   margin: 5rem;
   column-count: 3;
   max-width: 1000px;
@@ -28,7 +28,7 @@ ul li a {
 
 ul li a:hover {
   transform: translateX(10px);
-}
+} */
 
 /* @ HIDE ARROWS FROM NUMBER INPUT FIELD */
 input::-webkit-outer-spin-button,
