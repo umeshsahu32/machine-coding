@@ -7,8 +7,6 @@ import "animate.css";
 const Section15 = () => {
   const { count, countRef } = useCountAnimation(16, 1000);
 
-  console.log("count", count);
-
   return (
     <section className={styles.section15}>
       <h2 className={styles.title}>
