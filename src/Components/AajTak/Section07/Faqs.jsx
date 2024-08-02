@@ -1,6 +1,26 @@
 import React, { Fragment, useState } from "react";
 import styles from "./Faqs.module.css";
 
+const FaqPackage = () => {
+  return (
+    <Fragment>
+      <p>We offer several pricing packages for QLead, including:</p>
+      <p>
+        Accelerator Package: Suitable for medium-sized businesses, offering a
+        moderate number of leads with additional features.
+      </p>
+      <p>
+        Expansion Package: Designed for larger businesses, providing a high
+        volume of qualified leads and premium support.
+      </p>
+      <p>
+        Enterprise Package: Customized solutions for large enterprises with
+        extensive lead generation needs.",
+      </p>
+    </Fragment>
+  );
+};
+
 const Faqs = ({ data }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -31,7 +51,7 @@ const Faqs = ({ data }) => {
                 activeIndex === index ? styles.active : ""
               }`}
             >
-              {question.answer}
+              {question.id === 33 ? <FaqPackage /> : question.answer}
             </div>
           </div>
         ))}
