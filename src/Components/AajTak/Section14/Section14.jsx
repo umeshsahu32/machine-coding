@@ -4,69 +4,8 @@ import { AiOutlineDownload } from "react-icons/ai";
 import image1 from "../../../assets/images/browser.webp";
 import samplePdf from "../../../assets/sample-pdf.pdf";
 import { FaLongArrowAltRight } from "react-icons/fa";
-
-const InputField = ({
-  type,
-  label,
-  id,
-  name,
-  formData,
-  onChange,
-  placeholder,
-  error,
-  required,
-}) => {
-  return (
-    <Fragment>
-      <div className={styles.input_container}>
-        <div className={styles.label_container}>
-          <label htmlFor={id}>{label}</label>
-          <span>{required && "*"}</span>
-        </div>
-        <input
-          id={id}
-          type={type}
-          name={name}
-          value={formData[name]}
-          onChange={onChange}
-          placeholder={placeholder}
-          className={`${styles.input}`}
-        />
-        {error && error[name] && (
-          <p className={styles.errorText}>{error[name]}</p>
-        )}
-      </div>
-    </Fragment>
-  );
-};
-const TextareaField = ({
-  label,
-  id,
-  name,
-  formData,
-  onChange,
-  placeholder,
-  rowCount,
-}) => {
-  return (
-    <Fragment>
-      <div className={styles.input_container}>
-        <div className={styles.label_container}>
-          <label htmlFor={id}>{label}</label>
-        </div>
-        <textarea
-          name={name}
-          id={id}
-          value={formData[name]}
-          onChange={onChange}
-          placeholder={placeholder}
-          className={`${styles.textarea}`}
-          rows={rowCount}
-        />
-      </div>
-    </Fragment>
-  );
-};
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 const Section14 = () => {
   const [formData, setFormData] = useState({
@@ -77,10 +16,13 @@ const Section14 = () => {
     message: "",
   });
 
+  const [phone, setPhone] = useState("");
   const [error, setError] = useState();
 
   const FormValidation = (formData, setError) => {
     let newErrors = {};
+
+    console.log("formData-->", formData);
 
     const isValidEmail = () => {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -88,7 +30,7 @@ const Section14 = () => {
     };
 
     function isValidPhoneNumber() {
-      const numberRegex = /^\d{10}$/;
+      const numberRegex = /^\d{12}$/;
       return numberRegex.test(formData.phoneNumber);
     }
 
@@ -117,50 +59,14 @@ const Section14 = () => {
 
   const submitBtnHandler = (e) => {
     e.preventDefault();
+    formData.phoneNumber = phone;
     const isValid = FormValidation(formData, setError);
     if (isValid) {
       console.log("formData", formData);
     }
   };
 
-  const arr = [
-    {
-      id: 1,
-      type: "text",
-      label: "First Name",
-      element_id: "first-name",
-      name: "firstName",
-      placeholder: "Enter first name",
-      require: true,
-    },
-    {
-      id: 2,
-      type: "text",
-      label: "Last Name",
-      element_id: "last-name",
-      name: "lastName",
-      placeholder: "Enter Last name",
-      require: false,
-    },
-    {
-      id: 3,
-      type: "email",
-      label: "Email",
-      element_id: "email",
-      name: "email",
-      placeholder: "Enter Email",
-      require: true,
-    },
-    {
-      id: 4,
-      type: "number",
-      label: "Phone Number",
-      element_id: "phoneNumber",
-      name: "phoneNumber",
-      placeholder: "Enter Phone Number",
-      require: true,
-    },
-  ];
+  console.log("formData", formData);
 
   // @  JSX START
   return (
@@ -191,42 +97,102 @@ const Section14 = () => {
         </a>
       </div>
       <div className={styles.rightColumn}>
+        <div className={styles.get_quote}>Get A Quote</div>
         <div className={styles.form}>
-          {arr.map((item) => {
-            return (
-              <InputField
-                key={item.id}
-                type={item.type}
-                label={item.label}
-                id={item.element_id}
-                name={item.name}
-                formData={formData}
+          <div className={styles.name_container}>
+            <div className={styles.input_container}>
+              <label htmlFor="firstName">First Name*</label>
+              <input
+                type="text"
+                placeholder="Enter First Name"
+                name="firstName"
+                id="firstName"
                 onChange={handleInputChange}
-                placeholder={item.placeholder}
-                error={error}
-                required={item.require}
+                className={`${error?.firstName ? styles.error_border : ""}`}
               />
-            );
-          })}
-          <TextareaField
-            label="Message"
-            id="message"
-            name="message"
-            placeholder="Message"
-            rowCount="5"
-            formData={formData}
-            onChange={handleInputChange}
-          />
-          <button
-            onClick={(e) => submitBtnHandler(e)}
-            className={styles.submitButton}
-          >
-            <span>Submit</span>
-            <span>
-              <FaLongArrowAltRight />
-            </span>
-          </button>
+              {error?.firstName && (
+                <p className={styles.error_text}>{error.firstName}</p>
+              )}
+            </div>
+            <div className={styles.input_container}>
+              <label htmlFor="lastName">Last Name</label>
+              <input
+                type="text"
+                placeholder="Enter Last Name"
+                name="lastName"
+                id="lastName"
+                onChange={handleInputChange}
+              />
+            </div>
+          </div>
+          <div className={styles.name_container}>
+            <div className={styles.input_container}>
+              <label htmlFor="email">Email*</label>
+              <input
+                type="email"
+                placeholder="Enter First Name"
+                id="email"
+                name="email"
+                onChange={handleInputChange}
+                className={`${error?.email ? styles.error_border : ""}`}
+              />
+              {error?.email && (
+                <p className={styles.error_text}>{error.email} </p>
+              )}
+            </div>
+            <div className={styles.input_container}>
+              <label htmlFor="phone">Phone Number*</label>
+              <PhoneInput
+                country={"in"}
+                value={phone}
+                onChange={(phone) => setPhone(phone)}
+                inputClass={styles.phoneInput}
+                buttonClass={styles.dropdownButton}
+                dropdownClass={styles.dropdown}
+                containerClass={`${styles.inputContainer} ${
+                  error?.email ? styles.error_border : ""
+                }`}
+                id="phone"
+              />
+              {error?.phoneNumber && (
+                <p className={styles.error_text}>{error.phoneNumber} </p>
+              )}
+            </div>
+          </div>
+          <div className={styles.textarea_container}>
+            <div className={styles.input_container}>
+              <label htmlFor="message" className={styles.textarea_label}>
+                <span>Tell Us More</span>
+                <span>{`${formData.message.length}/600`}</span>
+              </label>
+              <textarea
+                rows={8}
+                placeholder="Tell us more"
+                id="message"
+                name="message"
+                onChange={(e) => {
+                  console.log("euh", e.key);
+                  if (formData.message.length === 600 && e.key == "Backspace") {
+                    handleInputChange(e);
+                  } else if (formData.message.length === 600) {
+                    console.log("s");
+                  }
+                  e;
+                }}
+                value={formData.message}
+              ></textarea>
+            </div>
+          </div>
         </div>
+        <button
+          onClick={(e) => submitBtnHandler(e)}
+          className={styles.submitButton}
+        >
+          <span>Submit</span>
+          <span>
+            <FaLongArrowAltRight />
+          </span>
+        </button>
       </div>
     </div>
   );
