@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Kropotkin Light";
+  font-family: "Heltar-Light";
 }
 
 :root {
@@ -16,7 +16,8 @@
   --color-button-1: #00a859;
   --color-button-2: #07864a;
   --color-button-3: #0d3422;
-  --font-family-1: "system-ui";
+  --font-family-1: "Heltar-Light";
+  --font-family-2: "Heltar-Regular";
 }
 
 /* Kropotkin Light */
@@ -38,6 +39,20 @@
 @font-face {
   font-family: "Gazpacho Regular";
   src: url("./fonts/GAZPACHO REGULAR.TTF") format("truetype");
+  font-weight: 400; /* Bold weight is typically 700 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heltar-Light";
+  src: url("./assets/fonts/Heltar-Light.ttf") format("truetype");
+  font-weight: 400; /* Bold weight is typically 700 */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heltar-Regular";
+  src: url("./assets/fonts/Heltar-Regular.ttf") format("truetype");
   font-weight: 400; /* Bold weight is typically 700 */
   font-style: normal;
 }

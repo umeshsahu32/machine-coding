@@ -1,0 +1,72 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.button_container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 1rem;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.pill {
+  padding: 8px;
+  background-color: transparent;
+  border-radius: 20px;
+  white-space: nowrap;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  border: 1px solid var(--color-button-1);
+  text-align: center;
+}
+
+.active,
+.pill:hover {
+  background-color: var(--color-button-1);
+  color: #fff;
+}
+
+@media (max-width: 820px) {
+  .container {
+    max-width: auto;
+    margin: auto;
+    padding: 0 2rem;
+  }
+  .button_container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 1rem;
+    margin: auto;
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .container {
+    max-width: auto;
+    margin: auto;
+    padding: 0 2rem;
+  }
+
+  .button_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: auto;
+    margin-top: 4rem;
+  }
+
+  .pill {
+    padding: 8px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    border: 1px solid var(--color-button-1);
+    text-align: center;
+  }
+}
