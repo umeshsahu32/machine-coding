@@ -62,7 +62,7 @@ const Section19 = () => {
             <div className={styles.section_card} key={item.id}>
               <img src={item.image} alt="Image" />
               <div className={styles.card_info}>
-                <h5>{item.heading}</h5>
+                <h5>{item.primary_heading}</h5>
                 <p>{item.desc}</p>
                 <button
                   className={styles.know_more_button}
