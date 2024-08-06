@@ -79,6 +79,9 @@ import Section17 from "./Components/AajTak/Section17/Section17.jsx";
 import Section18 from "./Components/AajTak/Section18/Section18.jsx";
 import Section19 from "./Components/AajTak/Section19/Section19.jsx";
 import Section20 from "./Components/AajTak/Section20/Section20.jsx";
+import Section21 from "./Components/AajTak/Section21/Section21.jsx";
+import Section22 from "./Components/AajTak/Section22/Section22.jsx";
+import Section23 from "./Components/AajTak/Section23/Section23.jsx";
 
 const router = createBrowserRouter([
   {
@@ -623,6 +626,31 @@ const router = createBrowserRouter([
     element: (
       <Suspense fallback={<PageLoader />}>
         <Section20 />
+      </Suspense>
+    ),
+  },
+  {
+    path: "section-21",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Section21 />
+      </Suspense>
+    ),
+  },
+  {
+    path: "section-22",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Section22 />
+      </Suspense>
+    ),
+  },
+
+  {
+    path: "section-23",
+    element: (
+      <Suspense fallback={<PageLoader />}>
+        <Section23 />
       </Suspense>
     ),
   },
