@@ -6,6 +6,7 @@ import samplePdf from "../../../assets/sample-pdf.pdf";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import { useNotification } from "../../NotificationToaster/NotificationContext.jsx";
 
 const Section14 = () => {
   const [formData, setFormData] = useState({
@@ -18,7 +19,7 @@ const Section14 = () => {
 
   const [phone, setPhone] = useState("");
   const [error, setError] = useState();
-
+  const { addNotification } = useNotification();
   const FormValidation = (formData, setError) => {
     let newErrors = {};
 
@@ -62,20 +63,31 @@ const Section14 = () => {
     formData.phoneNumber = phone;
     const isValid = FormValidation(formData, setError);
     if (isValid) {
-      console.log("formData", formData);
+      localStorage.setItem("formSubmit", true);
+      addNotification(
+        "Form is Submitted. Our team will contact you soon.",
+        "success",
+        3000
+      );
     }
   };
 
-  console.log("formData", formData);
+  const isFormSubmitted = localStorage.getItem("formSubmit");
+  console.log("isFormSubmitted", isFormSubmitted);
+
+  const handleDownload = (e) => {
+    if (!isFormSubmitted) {
+      e.preventDefault();
+      addNotification("Please Fill the form first.", "warning", 3000);
+    }
+  };
 
   // @  JSX START
   return (
     <div className={styles.section14}>
       <div className={styles.leftColumn}>
         <h1>
-          Discover
-          <br />
-          Digital
+          Discover Digital
           <br />
           Transformation
         </h1>
@@ -83,7 +95,12 @@ const Section14 = () => {
           Please feel free to share your thoughts and we can discuss it over a
           cup of tea.
         </p>
-        <a href={samplePdf} download className={styles.downloadButton}>
+        <a
+          href={samplePdf}
+          download
+          className={styles.downloadButton}
+          onClick={handleDownload}
+        >
           <img src={image1} alt="Brochure" className={styles.brochureImage} />
           <div className={styles.downloadText}>
             <div className={styles.download_text}>Download Our Brochure</div>
@@ -154,6 +171,7 @@ const Section14 = () => {
                 }`}
                 id="phone"
               />
+
               {error?.phoneNumber && (
                 <p className={styles.error_text}>{error.phoneNumber} </p>
               )}
@@ -170,16 +188,9 @@ const Section14 = () => {
                 placeholder="Tell us more"
                 id="message"
                 name="message"
-                onChange={(e) => {
-                  console.log("euh", e.key);
-                  if (formData.message.length === 600 && e.key == "Backspace") {
-                    handleInputChange(e);
-                  } else if (formData.message.length === 600) {
-                    console.log("s");
-                  }
-                  e;
-                }}
+                onChange={handleInputChange}
                 value={formData.message}
+                maxLength={600}
               ></textarea>
             </div>
           </div>

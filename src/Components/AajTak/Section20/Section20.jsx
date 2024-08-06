@@ -2,10 +2,17 @@ import React, { Fragment, useState } from "react";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import styles from "./Section20.module.css";
+import { useNotification } from "../../NotificationToaster/NotificationContext.jsx";
 
 const Section20 = () => {
   const [phone, setPhone] = useState("");
   console.log(phone);
+
+  const { addNotification } = useNotification();
+
+  const handleClick = () => {
+    addNotification("This is a success messagegdh bau !", "info", 3000); // 5 seconds duration
+  };
 
   return (
     <Fragment>
@@ -24,6 +31,7 @@ const Section20 = () => {
           // searchPlaceholder="Search countries"
         />
       </div>
+      <button onClick={handleClick}>Show Notification</button>;
     </Fragment>
   );
 };

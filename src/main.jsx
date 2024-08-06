@@ -10,6 +10,7 @@ import { store } from "./store";
 import { Provider } from "react-redux";
 import Section01 from "./Components/AajTak/Section01/Section01.jsx";
 import Section02 from "./Components/AajTak/Section02/Section02.jsx";
+import { NotificationProvider } from "./Components/NotificationToaster/NotificationContext.jsx";
 
 import {
   Accordion,
@@ -637,8 +638,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Provider store={store}>
-      <RouterProvider router={router} />
-    </Provider>
+    <NotificationProvider>
+      <Provider store={store}>
+        <RouterProvider router={router} />
+      </Provider>
+    </NotificationProvider>
   </React.StrictMode>
 );
