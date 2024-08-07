@@ -1,86 +1,29 @@
-.container {
+.carousel {
   max-width: 1200px;
   margin: auto;
-  padding: 0 2rem;
-}
-
-.carouselContainer {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.carousel {
+  margin-top: 4rem;
   display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  margin: 60px;
-}
-
-.carousel::-webkit-scrollbar {
-  display: none; /* WebKit */
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 .pill {
-  flex: 0 0 auto;
-  padding: 8px 16px;
-  margin-right: 10px;
+  padding: 12px 32px;
   background-color: transparent;
-  border-radius: 20px;
-  white-space: nowrap;
-  font-size: 14px;
+  border-radius: 40px;
+  font-size: 24px;
   cursor: pointer;
   transition: all 0.3s ease;
   font-weight: 600;
   border: 1px solid var(--color-button-1);
+  color: var(--color-button-1);
 }
 
 .active,
 .pill:hover {
   background-color: var(--color-button-1);
   color: #fff;
-}
-
-.scrollButton {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: transparent;
-  border: 1px solid var(--color-button-1);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 1;
-  transition: all 0.3s ease;
-}
-.scrollButton:hover {
-  background-color: var(--color-button-1);
-  color: #fff;
-}
-
-.leftButton {
-  left: 5px;
-}
-
-.rightButton {
-  right: 5px;
-}
-
-@media (max-width: 992px) {
-  .scrollButton {
-    display: none;
-  }
-
-  .carousel {
-    margin: 50px 0px;
-  }
 }
 
 @media (max-width: 480px) {

@@ -17,7 +17,7 @@ const Section22 = () => {
           >
             <label onClick={() => setCurrentStep(index + 1)}>
               <span className={styles.step_number}>{index + 1}</span>
-              {step.label}
+              <p className={styles.abc1}>{step.label}</p>
             </label>
           </div>
         ))}

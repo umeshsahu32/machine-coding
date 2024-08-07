@@ -5,7 +5,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import "animate.css";
 
 const Section15 = () => {
-  const { count, countRef } = useCountAnimation(16, 1000);
+  const { count, countRef } = useCountAnimation(55, 1000);
 
   return (
     <section className={styles.section15}>
@@ -31,7 +31,7 @@ const Section15 = () => {
           <span className={styles.count} ref={countRef}>
             {count}
           </span>
-          {count === 16 && <span className={`${styles.plus}`}>+</span>}
+          {count === 55 && <span className={`${styles.plus}`}>+</span>}
         </div>
         <button className={`${styles.submitButton} ${styles.btnEnable}`}>
           <span>Let's Talk</span>

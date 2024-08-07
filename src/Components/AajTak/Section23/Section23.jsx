@@ -1,44 +1,42 @@
-import React, { Fragment, useState } from "react";
-import { processData } from "./processData";
+import React, { Fragment } from "react";
 import styles from "./Section23.module.css";
 
 const Section23 = () => {
-  const [currentStep, setCurrentStep] = useState(1);
-
+  const arr = [
+    { id: 1, text: "Advance Targeting" },
+    { id: 2, text: "Lead Qualification" },
+    { id: 3, text: "Quality Assurance" },
+  ];
   return (
     <Fragment>
-      <div className={styles.section}>
-        <div className={styles.section_container}>
-          {processData.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className={`${styles.progress_inner__step} ${
-                  currentStep === index + 1 ? styles.active : ""
-                }`}
-              >
-                <label
-                  onClick={() => setCurrentStep(index + 1)}
-                  className={styles.section_label}
-                >
-                  <span className={styles.step_number}>{index + 1}</span>
-                  <span className={styles.label_item}> {item.label}</span>
-                </label>
-              </div>
-            );
-          })}
+      <div className={styles.quality_container}>
+        {arr.map((item) => {
+          return (
+            <div key={item.id} className={styles.quality_box}>
+              {item.text}
+            </div>
+          );
+        })}
+      </div>
+
+      <div className={styles.image_container}>
+        <div className={styles.image_text}>
+          <h1>But I must explain</h1>
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated they
+            live in Bookmarksgrove right at the coast of the Semantics, a large.
+          </p>
         </div>
-        <div className={styles.progress_inner__tabs}>
-          {processData.map((step, index) => {
-            return (
-              currentStep === index + 1 && (
-                <div key={index} className={`${styles.tab} `}>
-                  <h1>{step.label}</h1>
-                  <p>{step.content}</p>
-                </div>
-              )
-            );
-          })}
+      </div>
+
+      <div className={styles.gradientBackground}>
+        <div className={styles.content}>
+          <h1>Flexibility & Scalability </h1>
+          <p>
+            Your paragraph text goes here. This is a description or any other
+            content you want to place in the center of the gradient background.
+          </p>
         </div>
       </div>
     </Fragment>

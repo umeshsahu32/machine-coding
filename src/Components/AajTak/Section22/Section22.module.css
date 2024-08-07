@@ -1,21 +1,17 @@
 .progress_inner__step:before,
 .progress_inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* position: absolute;
+  position: absolute;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  margin: auto; */
+  margin: auto;
 }
 
 .progress_inner__bar,
 .progress_inner__bar_set {
-  height: 600px;
-  left: 0%;
+  height: 6px;
+  left: 10%;
   background: repeating-linear-gradient(
     45deg,
     #1ea4ec,
@@ -38,7 +34,7 @@
   line-height: 30px;
   border: 3px solid #a6cde2;
   font-size: 12px;
-  /* top: 3px; */
+  top: 3px;
   border-radius: 100%;
   transition: all 0.4s;
   cursor: pointer;
@@ -46,13 +42,13 @@
 }
 
 .progress_inner__step {
-  /* width: 20%;
+  width: 20%;
   font-size: 14px;
   padding: 0 10px;
   transition: all 0.4s;
   float: left;
   text-align: center;
-  position: relative; */
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -63,7 +59,7 @@
   padding-top: 50px;
   top: -20px;
   display: block;
-  /* position: relative; */
+  position: relative;
   cursor: pointer;
 }
 
@@ -76,14 +72,14 @@
   background: #1ea4ec;
 }
 
-/* .progress_inner {
+.progress_inner {
   height: 200px;
   width: 800px;
-} */
+}
 
 .progress_inner__bar_set {
   width: 80%;
-  /* top: -6px; */
+  top: -6px;
   background: #70afd0;
   position: relative;
   z-index: -2;
@@ -202,4 +198,37 @@
 /* Update this selector to target the step number */
 .progress_inner__step:before {
   content: none;
+}
+
+@media (max-width: 620px) {
+  .progress_inner__tabs .tab {
+    margin-top: 15rem;
+  }
+
+  .progress_inner__tabs .tab h1 {
+    font-size: 2.6rem;
+  }
+
+  .progress_inner__tabs .tab p {
+    font-size: 1.8rem;
+  }
+
+  .progress_inner__step .step_number {
+    top: 0px;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .abc1 {
+    font-size: 1.6rem;
+  }
+
+  .progress_inner {
+    height: 300px;
+    padding: 0 2rem;
+  }
 }
