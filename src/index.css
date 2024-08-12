@@ -18,6 +18,8 @@
   --color-button-3: #0d3422;
   --font-family-1: "Heltar-Light";
   --font-family-2: "Heltar-Regular";
+  --color-theme: #1579bd;
+  --background: linear-gradient(45deg, #1579bd, #8e44ad);
 }
 
 /* Kropotkin Light */

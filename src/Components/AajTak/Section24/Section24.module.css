@@ -12,14 +12,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 
 .heading {
-  font-size: 2.5rem;
-  text-align: center;
-  color: #333;
-  margin-bottom: 2rem;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.heading h2 {
+  font-size: 3.5rem;
+  color: #1579bd;
+  text-transform: capitalize;
+}
+
+.heading h3 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #1579bd;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
 }
 
 .swiper {
@@ -27,10 +42,44 @@
   max-width: 800px;
 }
 
+.banner_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text_container {
+  color: #fff;
+  background-color: #1579bd;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.banner_container h3 {
+  font-size: 1.6rem;
+  font-family: var(--font-family-2);
+  margin-bottom: 8px;
+}
+
+.banner_container h4 {
+  font-size: 1.2rem;
+  font-family: var(--font-family-2);
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.banner_container p {
+  font-size: 1rem;
+  font-family: var(--font-family-1);
+  text-align: center;
+}
+
 .image {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 50vh;
+  object-fit: contain;
 }
 
 @media (max-width: 768px) {

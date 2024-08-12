@@ -1,44 +1,44 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 import styles from "./Section24.module.css";
-import image from "../../../assets/logos/image-1.jpeg";
+import { serviceData } from "./serviceData";
 
 const Section24 = () => {
-  const images = [
-    "https://images.unsplash.com/photo-1722518804734-d2287ab73762?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://plus.unsplash.com/premium_photo-1675700427405-f4cf90589055?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1722809431347-24e20c2c9981?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    // Add more image URLs as needed
-  ];
-
   return (
-    <section className={styles.section}>
-      <h2 className={styles.heading}>
-        Welcome to Our
-        <br />
-        Amazing Section
-      </h2>
-      <Swiper
-        modules={[Autoplay]}
-        spaceBetween={30}
-        slidesPerView={1}
-        autoplay={{ delay: 3000 }}
-        className={styles.swiper}
-      >
-        {images.map((image, index) => (
-          <SwiperSlide key={index}>
-            <img
-              src={image}
-              alt={`Slide ${index + 1}`}
-              className={styles.image}
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </section>
+    <Fragment>
+      <section className={styles.section}>
+        <div className={styles.heading}>
+          <h2>Boost your business with</h2>
+          <h3>Amazing Section</h3>
+        </div>
+        <Swiper
+          modules={[Autoplay]}
+          spaceBetween={30}
+          slidesPerView={1}
+          autoplay={{ delay: 8000 }}
+          className={styles.swiper}
+        >
+          {serviceData.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className={styles.banner_container}>
+                <img
+                  src={item.image}
+                  alt={`Slide ${index + 1}`}
+                  className={styles.image}
+                />
+                <div className={styles.text_container}>
+                  <h3>{item.secondaryHeading}</h3>
+                  <p>{item.paragraph}</p>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </section>
+    </Fragment>
   );
 };
 
