@@ -24,12 +24,10 @@ const Section27 = () => {
         <div className={styles.process_container}>
           {SectionData.map((item) => {
             return (
-              <Fragment>
-                <div className={styles.process_box}>
-                  <h3>{item.heading}</h3>
-                  <p>{item.paragraph}</p>
-                </div>
-              </Fragment>
+              <div className={styles.process_box} key={item.id}>
+                <h3>{item.heading}</h3>
+                <p>{item.paragraph}</p>
+              </div>
             );
           })}
         </div>
