@@ -1,0 +1,38 @@
+.sectionContainer {
+  max-width: 800px;
+  margin: 4rem auto;
+}
+
+.terms_heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.terms_heading h4 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+.terms_heading p {
+  font-size: 1.2rem;
+  /* text-align: center; */
+}
+
+.terms_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.terms_section h5 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-primary);
+}
