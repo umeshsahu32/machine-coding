@@ -1,0 +1,121 @@
+/* Blogs.module.css */
+.container {
+  background-color: #f1f5f9; /* bg-slate-100 */
+  min-height: 100vh; /* min-h-screen */
+  padding: 2.5rem; /* p-10 */
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.5rem; /* pb-10 */
+}
+
+.title {
+  font-size: 3rem; /* text-5xl */
+  color: #4b5563; /* text-slate-700 */
+  margin-bottom: 0.5rem; /* pb-2 */
+}
+
+.subtitle {
+  font-size: 1.25rem; /* text-xl */
+  color: #9ca3af; /* text-slate-400 */
+}
+
+.blogList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.blogItem {
+  border-top: 1px solid #d1d5db; /* border-slate-300 */
+  padding: 2.5rem 0; /* py-10 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.blogContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem; /* gap-4 */
+  max-width: 60%; /* max-w-[60%] */
+}
+
+.blogImage {
+  width: 9rem; /* w-36 */
+  height: 9rem; /* h-36 */
+  object-fit: cover; /* object-cover */
+  border-radius: 0.5rem; /* rounded-lg */
+}
+
+.category {
+  background-color: #e0bbff; /* bg-purple-100 */
+  padding: 0.25rem 0.75rem; /* px-3 py-1 */
+  border-radius: 9999px; /* rounded-full */
+  color: #7e22ce; /* text-purple-400 */
+  font-size: 0.875rem; /* text-sm */
+}
+
+.blogTitle {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  color: #1f2937; /* text-gray-800 */
+  text-transform: capitalize; /* capitalize */
+}
+
+.blogDescription {
+  font-size: 0.875rem; /* text-sm */
+  color: #6b7280; /* text-gray-500 */
+}
+
+.learnMore {
+  margin-left: auto; /* ml-auto */
+}
+
+.learnMoreButton {
+  font-size: 0.875rem; /* text-sm */
+  border: 1px solid black; /* border-black */
+  font-weight: 600; /* font-semibold */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px; /* rounded-full */
+  padding: 0.25rem 1.25rem; /* px-5 py-1 */
+  transition: all 0.2s;
+}
+
+.learnMoreButton:hover {
+  color: white; /* hover:text-white */
+  background-color: black; /* hover:bg-black */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .title {
+    font-size: 2.5rem; /* Smaller title on mobile */
+  }
+
+  .subtitle {
+    font-size: 1rem; /* Smaller subtitle on mobile */
+  }
+
+  .blogContent {
+    flex-direction: column; /* Stack items on mobile */
+    align-items: flex-start; /* Align items to the start */
+    max-width: 100%; /* Full width */
+  }
+
+  .blogImage {
+    width: 100%; /* Full width for images */
+    height: auto; /* Keep aspect ratio */
+  }
+}
